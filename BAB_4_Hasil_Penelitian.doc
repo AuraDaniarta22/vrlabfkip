@@ -1,0 +1,440 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta charset="utf-8">
+    <title>BAB 4 Hasil Penelitian</title>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; line-height: 2; margin: 1in; }
+        h1 { text-align: center; font-size: 14pt; font-weight: bold; margin-bottom: 20px; }
+        h2 { font-size: 12pt; font-weight: bold; margin-top: 20px; margin-bottom: 10px; }
+        h3 { font-size: 12pt; font-weight: bold; margin-top: 15px; margin-bottom: 5px; }
+        h4 { font-size: 12pt; font-weight: bold; margin-top: 10px; margin-bottom: 5px; }
+        p { text-align: justify; text-indent: 1.27cm; margin-bottom: 10px; }
+        ul, ol { margin-left: 20px; margin-bottom: 10px; }
+        li { margin-bottom: 5px; text-align: justify; }
+        table { border-collapse: collapse; width: 100%; margin: 15px 0; }
+        table, th, td { border: 1px solid black; }
+        th, td { padding: 8px; text-align: left; font-size: 12pt; }
+        th { text-align: center; font-weight: bold; }
+        .no-indent { text-indent: 0; }
+    </style>
+</head>
+<body>
+
+<h1>BAB IV<br>HASIL PENELITIAN DAN PEMBAHASAN</h1>
+
+<h2>4.1 Hasil Penelitian</h2>
+
+<p>Penelitian ini menghasilkan sebuah produk media pembelajaran berbasis Virtual Reality (VR) berupa Virtual Tour Laboratorium FKIP (PMIPA) yang dapat diakses secara daring melalui website <b>vrtourfkip.com</b>. Pengembangan produk ini menggunakan model pengembangan ADDIE (<i>Analysis, Design, Development, Implementation, Evaluation</i>) yang terdiri dari lima tahapan sistematis. Berikut ini dipaparkan hasil dari setiap tahapan pengembangan yang telah dilaksanakan.</p>
+
+<h3>4.1.1 Tahap Analisis (<i>Analysis</i>)</h3>
+
+<p>Tahap analisis merupakan langkah awal dalam proses pengembangan media pembelajaran Virtual Tour Laboratorium FKIP (PMIPA). Pada tahap ini dilakukan beberapa kegiatan analisis yang meliputi analisis kebutuhan, analisis pengguna, analisis lingkungan, dan analisis teknologi.</p>
+
+<h4>a. Analisis Kebutuhan</h4>
+
+<p>Berdasarkan observasi dan identifikasi masalah di lapangan, ditemukan beberapa permasalahan yang mendasari perlunya pengembangan media Virtual Tour Laboratorium FKIP (PMIPA), antara lain:</p>
+
+<ol>
+    <li>Keterbatasan akses fisik mahasiswa terhadap fasilitas laboratorium, terutama bagi mahasiswa baru atau calon mahasiswa yang belum mengenal lingkungan kampus secara menyeluruh.</li>
+    <li>Belum tersedianya media pengenalan fasilitas laboratorium yang bersifat interaktif, imersif, dan dapat diakses kapan saja serta di mana saja.</li>
+    <li>Pengenalan laboratorium selama ini masih dilakukan secara konvensional melalui kunjungan langsung, yang terkendala oleh jadwal, kapasitas ruangan, dan keterbatasan waktu.</li>
+    <li>Perlunya media yang mampu menampilkan detail ruangan laboratorium secara komprehensif melalui visualisasi panorama 360 derajat sehingga pengguna dapat merasakan pengalaman seolah-olah berada di dalam laboratorium tersebut.</li>
+</ol>
+
+<h4>b. Analisis Pengguna</h4>
+
+<p>Sasaran utama pengguna media Virtual Tour ini adalah sivitas akademika Fakultas Keguruan dan Ilmu Pendidikan (FKIP), khususnya Program Studi Pendidikan Matematika dan Ilmu Pengetahuan Alam (PMIPA). Pengguna target meliputi:</p>
+
+<ol>
+    <li><b>Mahasiswa aktif</b> yang memerlukan orientasi dan pengenalan terhadap fasilitas laboratorium yang tersedia di gedung FKIP.</li>
+    <li><b>Calon mahasiswa baru</b> yang ingin mengenal fasilitas dan lingkungan kampus sebelum memulai perkuliahan.</li>
+    <li><b>Dosen dan tenaga kependidikan</b> yang memerlukan media bantu untuk menyampaikan informasi tentang ketersediaan fasilitas laboratorium.</li>
+    <li><b>Masyarakat umum</b> yang ingin mengetahui fasilitas laboratorium FKIP (PMIPA) secara virtual.</li>
+</ol>
+
+<p>Berdasarkan analisis pengguna, disimpulkan bahwa media Virtual Tour harus dirancang dengan antarmuka yang ramah pengguna (<i>user-friendly</i>), responsif pada berbagai perangkat (komputer, tablet, dan smartphone), serta mudah dioperasikan tanpa memerlukan keahlian teknis khusus.</p>
+
+<h4>c. Analisis Lingkungan Laboratorium</h4>
+
+<p>Survei lapangan dilakukan untuk mengidentifikasi dan memetakan seluruh area laboratorium yang akan divisualisasikan dalam Virtual Tour. Berdasarkan hasil survei, diperoleh data sebagai berikut:</p>
+
+<table>
+    <tr>
+        <th>No.</th>
+        <th>Area Laboratorium</th>
+        <th>Lokasi</th>
+        <th>Keterangan</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Lantai 1 (Koridor Utama)</td>
+        <td>Lantai 1 Gedung FKIP</td>
+        <td>Titik awal (starting point) Virtual Tour, menampilkan area koridor dan akses menuju laboratorium</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Lantai 2 (Koridor Atas)</td>
+        <td>Lantai 2 Gedung FKIP</td>
+        <td>Area eksplorasi tambahan di tingkat atas yang menghubungkan ke laboratorium-laboratorium lainnya</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Laboratorium Fisika (Labfis)</td>
+        <td>Lantai 1 Gedung FKIP</td>
+        <td>Area simulasi dan praktik fisika beserta peralatan laboratorium</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Laboratorium Matematika (Labmath)</td>
+        <td>Lantai 1 Gedung FKIP</td>
+        <td>Area pembelajaran dan praktik matematika</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Laboratorium Biologi (Labbio)</td>
+        <td>Lantai 2 Gedung FKIP</td>
+        <td>Area praktikum dan penelitian biologi</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Laboratorium Kimia (Labkim)</td>
+        <td>Lantai 2 Gedung FKIP</td>
+        <td>Area praktikum dan penelitian kimia</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Laboratorium Komputer (Labkom)</td>
+        <td>Lantai 2 Gedung FKIP</td>
+        <td>Area pembelajaran berbasis komputer dan teknologi informasi</td>
+    </tr>
+</table>
+
+<p>Total terdapat 7 area utama yang divisualisasikan dalam Virtual Tour, mencakup 2 area koridor (Lantai 1 dan Lantai 2) serta 5 laboratorium yang terletak di dua lantai gedung FKIP.</p>
+
+<h4>d. Analisis Teknologi</h4>
+
+<p>Berdasarkan analisis teknologi, ditentukan spesifikasi teknologi yang akan digunakan dalam pengembangan Virtual Tour, meliputi:</p>
+
+<ol>
+    <li><b>Teknologi Panorama 360 Derajat:</b> Pengambilan gambar menggunakan kamera 360 derajat untuk menghasilkan gambar panorama berkualitas tinggi (resolusi hingga 4096×4096 piksel per sisi kubus) yang mampu menampilkan detail ruangan secara menyeluruh.</li>
+    <li><b>Teknologi Web-Based VR:</b> Aplikasi dikembangkan berbasis web menggunakan HTML5, CSS3, dan JavaScript agar dapat diakses langsung melalui browser tanpa perlu menginstal aplikasi tambahan.</li>
+    <li><b>Teknologi Cubic Panorama:</b> Format gambar panorama menggunakan <i>Cubic Panorama Frame</i> yang terdiri dari 6 sisi (front, back, left, right, top, bottom) dengan sistem tiling multi-level untuk optimalisasi loading.</li>
+    <li><b>Teknologi WebVR Polyfill:</b> Dukungan untuk pengalaman VR yang lebih immersif melalui perangkat VR headset dengan menggunakan WebVR Polyfill library.</li>
+    <li><b>Kebutuhan Sistem Pengguna:</b> Perangkat komputer/laptop, smartphone (Android/iOS), atau tablet dengan browser modern (Google Chrome, Mozilla Firefox, Safari, atau Microsoft Edge) dan koneksi internet yang stabil.</li>
+</ol>
+
+<h3>4.1.2 Tahap Desain (<i>Design</i>)</h3>
+
+<p>Tahap desain merupakan tahap perencanaan dan perancangan Virtual Tour berdasarkan hasil analisis yang telah dilakukan sebelumnya. Pada tahap ini dilakukan perancangan arsitektur sistem, perancangan navigasi, perancangan antarmuka, dan perancangan konten.</p>
+
+<h4>a. Perancangan Arsitektur Sistem</h4>
+
+<p>Arsitektur Virtual Tour Laboratorium FKIP (PMIPA) dirancang dengan struktur hierarkis bertingkat yang terdiri dari halaman utama (Lantai 1) sebagai titik masuk (<i>entry point</i>), kemudian bercabang ke berbagai area laboratorium. Struktur navigasi dirancang sebagai berikut:</p>
+
+<p class="no-indent"><b>Struktur Hierarki Virtual Tour:</b></p>
+<ul>
+    <li><b>Level 1 &ndash; Lantai 1 (Halaman Utama):</b> Merupakan titik awal tour yang menampilkan koridor lantai 1 gedung FKIP. Dari titik ini pengguna dapat mengakses Laboratorium Fisika, Laboratorium Matematika, serta naik ke Lantai 2.</li>
+    <li><b>Level 2a &ndash; Laboratorium Fisika:</b> Berisi beberapa panorama titik pandang (<i>viewpoint</i>) di dalam Lab Fisika yang saling terhubung satu sama lain.</li>
+    <li><b>Level 2b &ndash; Laboratorium Matematika:</b> Berisi beberapa panorama titik pandang di dalam Lab Matematika.</li>
+    <li><b>Level 2c &ndash; Lantai 2:</b> Area koridor lantai 2 yang menghubungkan ke Lab Biologi, Lab Kimia, dan Lab Komputer.</li>
+    <li><b>Level 3a &ndash; Laboratorium Biologi:</b> Berisi panorama titik pandang di dalam Lab Biologi.</li>
+    <li><b>Level 3b &ndash; Laboratorium Kimia:</b> Berisi panorama titik pandang di dalam Lab Kimia.</li>
+    <li><b>Level 3c &ndash; Laboratorium Komputer:</b> Berisi panorama titik pandang di dalam Lab Komputer.</li>
+</ul>
+
+<p>Setiap modul Virtual Tour dirancang sebagai unit independen (<i>standalone</i>) dengan file <i>index.htm</i> tersendiri, <i>script.js</i> untuk konfigurasi panorama dan interaksi, folder <i>media</i> untuk menyimpan aset gambar panorama dan multimedia, folder <i>lib</i> untuk menyimpan library player VR (TDV Player versi 0.890), serta folder <i>skin</i> untuk elemen antarmuka pengguna seperti tombol navigasi.</p>
+
+<h4>b. Perancangan Navigasi dan Interaksi</h4>
+
+<p>Sistem navigasi Virtual Tour dirancang agar intuitif dan mudah digunakan oleh berbagai kalangan pengguna. Desain navigasi meliputi:</p>
+
+<ol>
+    <li><b>Navigasi Pan &amp; Tilt 360 Derajat:</b> Pengguna dapat melihat sekeliling ruangan dengan cara menggeser (drag) pada komputer atau swipe pada perangkat sentuh. Pada smartphone yang mendukung, fitur <i>gyroscope</i> juga dapat dimanfaatkan.</li>
+    <li><b>Navigasi Zoom In &amp; Zoom Out:</b> Pengguna dapat memperbesar dan memperkecil tampilan menggunakan scroll wheel pada komputer atau gerakan pinch pada perangkat sentuh.</li>
+    <li><b>Hotspot Navigasi:</b> Ikon-ikon interaktif (<i>hotspots</i>) ditempatkan pada posisi strategis dalam panorama untuk memungkinkan perpindahan antar ruangan. Setiap hotspot dilengkapi dengan efek <i>rollover</i> dan animasi transisi (<i>FadeInEffect</i> dan <i>FadeOutEffect</i>) dengan durasi 1000 milidetik untuk memberikan pengalaman perpindahan yang mulus.</li>
+    <li><b>Peta Interaktif (Map Viewer):</b> Disediakan peta denah lantai yang menampilkan posisi pengguna saat ini (<i>field of view overlay</i>) dengan indikator sudut pandang secara real-time, sehingga pengguna dapat mengetahui lokasi mereka dalam bangunan.</li>
+    <li><b>Tombol Kontrol:</b> Antarmuka dilengkapi dengan tombol-tombol kontrol berupa ikon (<i>IconButton</i>) untuk fungsi seperti fullscreen, zoom, dan navigasi tambahan.</li>
+</ol>
+
+<h4>c. Perancangan Antarmuka Pengguna (User Interface)</h4>
+
+<p>Antarmuka pengguna dirancang dengan prinsip kesederhanaan dan kemudahan akses. Komponen antarmuka yang dirancang meliputi:</p>
+
+<ol>
+    <li><b>Halaman Preloader:</b> Halaman pembuka dengan latar belakang putih yang menampilkan video animasi loading saat aset panorama sedang dimuat. Video preloader dirancang dengan resolusi 2240×2240 piksel dan diposisikan secara sentral di layar.</li>
+    <li><b>Area Viewer Utama:</b> Area penampil panorama 360 derajat yang memenuhi seluruh layar (100% lebar dan tinggi) dengan latar belakang gelap (#282828) sebagai area utama interaksi pengguna.</li>
+    <li><b>Elemen Skin:</b> Tombol-tombol navigasi dan kontrol didesain dengan tiga state visual: normal, <i>rollover</i> (saat kursor diarahkan), dan <i>pressed</i> (saat ditekan), memberikan umpan balik visual yang jelas kepada pengguna.</li>
+    <li><b>Desain Responsif:</b> Antarmuka dirancang responsif dengan penanganan khusus untuk perangkat iOS (AppleWebKit) melalui mekanisme penskalaan otomatis (<i>auto-scaling</i>) dan penyesuaian viewport dinamis.</li>
+</ol>
+
+<h4>d. Perancangan Konten Panorama</h4>
+
+<p>Konten panorama dirancang dengan spesifikasi teknis sebagai berikut:</p>
+
+<table>
+    <tr>
+        <th>Spesifikasi</th>
+        <th>Detail</th>
+    </tr>
+    <tr>
+        <td>Format Panorama</td>
+        <td>Cubic Panorama (6 sisi: front, back, left, right, top, bottom)</td>
+    </tr>
+    <tr>
+        <td>Resolusi Maksimum</td>
+        <td>4096 × 4096 piksel per sisi (untuk panorama resolusi tinggi)</td>
+    </tr>
+    <tr>
+        <td>Sistem Tiling</td>
+        <td>Multi-level tiling (4 level: 4096px → 2048px → 1024px → 512px)</td>
+    </tr>
+    <tr>
+        <td>Field of View (FOV)</td>
+        <td>Horizontal: 360°, Vertikal: 180° (full spherical)</td>
+    </tr>
+    <tr>
+        <td>Minimum HFOV</td>
+        <td>150% (zoom in maksimum)</td>
+    </tr>
+    <tr>
+        <td>Maksimum HFOV</td>
+        <td>130° (zoom out maksimum)</td>
+    </tr>
+    <tr>
+        <td>Kecepatan Rotasi Otomatis</td>
+        <td>7.96°/detik dengan easing cubic</td>
+    </tr>
+    <tr>
+        <td>Format Gambar</td>
+        <td>JPEG (.jpg) untuk panorama, PNG untuk peta dan ikon</td>
+    </tr>
+    <tr>
+        <td>Loading Strategy</td>
+        <td>On-demand loading dengan preload pada level terendah</td>
+    </tr>
+</table>
+
+<p>Setiap panorama dilengkapi dengan sistem kamera otomatis (<i>PanoramaCamera</i>) yang memberikan animasi rotasi awal (<i>initial sequence</i>) dengan pola gerakan: <i>cubic_in</i> (akselerasi 18.5°), <i>linear</i> (rotasi konstan 323°), dan <i>cubic_out</i> (deselerasi 18.5°), sehingga saat pertama kali memuat, pengguna akan mendapatkan preview rotasi panorama secara otomatis sebelum mengambil alih kontrol navigasi secara manual.</p>
+
+<h3>4.1.3 Tahap Pengembangan (<i>Development</i>)</h3>
+
+<p>Tahap pengembangan merupakan tahap realisasi dari rancangan yang telah dibuat pada tahap desain. Pada tahap ini dilakukan proses pengambilan gambar panorama, pemrosesan gambar, pengembangan aplikasi web, serta integrasi seluruh komponen menjadi satu kesatuan sistem Virtual Tour yang utuh dan fungsional.</p>
+
+<h4>a. Pengambilan Gambar Panorama 360 Derajat</h4>
+
+<p>Proses pengambilan gambar panorama dilaksanakan di seluruh area laboratorium gedung FKIP (PMIPA). Pengambilan gambar dilakukan menggunakan kamera 360 derajat pada tanggal 27 April 2026, sebagaimana tercatat dalam metadata label panorama (contoh: <i>IMG_20260427_113852_00_004</i>, <i>IMG_20260427_125400_00_042</i>). Pada setiap ruangan ditetapkan beberapa titik pandang (<i>viewpoint</i>) strategis untuk memberikan cakupan visual yang komprehensif.</p>
+
+<p>Total titik panorama yang diambil untuk setiap area Virtual Tour adalah sebagai berikut:</p>
+
+<table>
+    <tr>
+        <th>No.</th>
+        <th>Area</th>
+        <th>Jumlah Titik Panorama</th>
+        <th>Resolusi Per Sisi</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Lantai 1 (Koridor Utama)</td>
+        <td>8 titik panorama</td>
+        <td>Bervariasi (2048px &ndash; 4096px)</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Laboratorium Fisika</td>
+        <td>Beberapa titik panorama</td>
+        <td>Hingga 4096px</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Laboratorium Matematika</td>
+        <td>Beberapa titik panorama</td>
+        <td>Hingga 4096px</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Lantai 2 (Koridor Atas)</td>
+        <td>Beberapa titik panorama</td>
+        <td>Hingga 2048px</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Laboratorium Biologi</td>
+        <td>Beberapa titik panorama</td>
+        <td>Hingga 4096px</td>
+    </tr>
+    <tr>
+        <td>6</td>
+        <td>Laboratorium Kimia</td>
+        <td>Beberapa titik panorama</td>
+        <td>Hingga 2048px</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>Laboratorium Komputer</td>
+        <td>Beberapa titik panorama</td>
+        <td>Hingga 4096px</td>
+    </tr>
+</table>
+
+<h4>b. Pemrosesan Gambar dan Pembuatan Aset</h4>
+
+<p>Gambar panorama yang telah diambil kemudian diproses melalui beberapa tahapan:</p>
+
+<ol>
+    <li><b>Konversi ke Format Kubik:</b> Gambar panorama equirectangular dikonversi ke format <i>Cubic Panorama Frame</i> yang terdiri dari 6 sisi (front, back, left, right, top, bottom) untuk rendering yang lebih efisien pada browser web.</li>
+    <li><b>Tiling Multi-Level:</b> Setiap sisi panorama dipecah menjadi beberapa level resolusi dengan sistem <i>tiling</i>. Level tertinggi (Level 0) memiliki resolusi penuh (4096×4096 piksel dengan grid 8×8 tiles), sementara level terendah (Level 3) menggunakan resolusi 512×512 piksel sebagai thumbnail preload. Sistem ini memungkinkan <i>progressive loading</i> di mana gambar resolusi rendah dimuat terlebih dahulu, kemudian secara bertahap digantikan dengan resolusi lebih tinggi.</li>
+    <li><b>Pembuatan Peta Denah:</b> Dibuat dua peta denah interaktif &ndash; peta Lantai 1 dan peta Lantai 2 &ndash; dengan resolusi 2500×1667 piksel (format PNG). Setiap peta dilengkapi dengan <i>overlay hotspot</i> yang menandai posisi titik panorama.</li>
+    <li><b>Pembuatan Ikon dan Tombol:</b> Dirancang dan dibuat elemen-elemen antarmuka berupa ikon tombol navigasi (IconButton) dengan tiga state visual: normal, rollover, dan pressed, dalam format PNG dengan latar belakang transparan.</li>
+    <li><b>Pembuatan Video Preloader:</b> Diproduksi video animasi loading dengan resolusi 2240×2240 piksel dalam format MP4 sebagai splash screen saat aplikasi pertama kali dimuat.</li>
+</ol>
+
+<h4>c. Pengembangan Aplikasi Web</h4>
+
+<p>Aplikasi Virtual Tour dikembangkan menggunakan teknologi web standar dengan komponen-komponen utama sebagai berikut:</p>
+
+<ol>
+    <li><b>Halaman HTML (index.htm):</b> Setiap modul Virtual Tour memiliki file <i>index.htm</i> sebagai halaman utama yang berisi struktur dokumen HTML5 dengan viewport yang dioptimalkan untuk perangkat mobile (<code>user-scalable=no, initial-scale=0.5, width=device-width, viewport-fit=cover</code>). Halaman ini juga menyertakan mekanisme preloading aset menggunakan tag <code>&lt;link rel="preload"&gt;</code> untuk mempersiapkan gambar panorama sebelum player dimuat.</li>
+    <li><b>Konfigurasi Panorama (script.js):</b> File JavaScript yang berisi definisi seluruh scene panorama, konfigurasi kamera, playlist navigasi, hotspot overlay, peta interaktif, dan pengaturan transisi. File ini menggunakan format JSON-like object yang diinterpretasikan oleh TDV Player engine.</li>
+    <li><b>Engine Virtual Tour (tdvplayer.js):</b> Library TDV Player versi 0.890 yang berfungsi sebagai engine utama untuk rendering panorama kubik, manajemen navigasi, pengelolaan hotspot, dan penanganan interaksi pengguna.</li>
+    <li><b>WebVR Polyfill (WebVRPolyfill.js):</b> Library pendukung untuk kompatibilitas Virtual Reality pada browser yang belum mendukung WebVR API secara native, memungkinkan pengalaman VR menggunakan headset VR.</li>
+    <li><b>HLS Player (Hls.js):</b> Library HTTP Live Streaming untuk mendukung pemutaran video streaming adaptif.</li>
+</ol>
+
+<h4>d. Integrasi dan Konfigurasi Sistem</h4>
+
+<p>Seluruh komponen diintegrasikan menjadi satu kesatuan sistem Virtual Tour dengan konfigurasi sebagai berikut:</p>
+
+<ol>
+    <li><b>Konfigurasi Playlist Panorama:</b> Setiap modul memiliki <i>mainPlayList</i> yang mengatur urutan dan transisi antar panorama. Setiap item dalam playlist dikonfigurasi dengan efek transisi <i>FadeInEffect</i> dan <i>FadeOutEffect</i> berdurasi 1000 milidetik.</li>
+    <li><b>Konfigurasi Adjacency (Keterhubungan):</b> Setiap panorama dihubungkan dengan panorama lain yang berdekatan secara fisik melalui objek <i>AdjacentPanorama</i>, dengan pengaturan sudut pandang awal (<i>yaw</i>) dan sudut pandang kembali (<i>backwardYaw</i>) yang akurat berdasarkan posisi sebenarnya.</li>
+    <li><b>Konfigurasi Peta Lokasi:</b> Setiap panorama dipetakan ke koordinat tertentu pada peta denah melalui objek <i>PanoramaMapLocation</i>, memungkinkan peta interaktif menampilkan posisi pengguna secara real-time dengan <i>field of view overlay</i>.</li>
+    <li><b>Penanganan Kompatibilitas Perangkat:</b> Dikembangkan mekanisme deteksi perangkat dan browser untuk menangani perbedaan perilaku, termasuk penanganan khusus untuk Safari iOS, autoplay video pada berbagai browser, dan responsivitas layout pada perangkat mobile.</li>
+    <li><b>Integrasi Google Analytics:</b> Ditambahkan tracking Google Analytics (UA-116087-3) untuk memonitor penggunaan dan traffic Virtual Tour.</li>
+</ol>
+
+<h3>4.1.4 Tahap Implementasi (<i>Implementation</i>)</h3>
+
+<p>Tahap implementasi merupakan tahap penerapan produk Virtual Tour yang telah dikembangkan ke dalam lingkungan nyata. Pada tahap ini dilakukan proses deployment, penyusunan panduan penggunaan, dan ujicoba produk kepada pengguna.</p>
+
+<h4>a. Deployment dan Publikasi</h4>
+
+<p>Produk Virtual Tour Laboratorium FKIP (PMIPA) dipublikasikan secara daring melalui website <b>vrtourfkip.com</b> sehingga dapat diakses oleh siapa saja melalui internet. Proses deployment meliputi:</p>
+
+<ol>
+    <li>Pengunggahan seluruh file aset Virtual Tour ke server web hosting, mencakup file HTML, JavaScript, gambar panorama, video, dan elemen antarmuka.</li>
+    <li>Konfigurasi server untuk mendukung akses dari berbagai perangkat dan browser, termasuk pengaturan CORS (<i>Cross-Origin Resource Sharing</i>) dan cache control untuk optimalisasi kecepatan loading.</li>
+    <li>Pengujian aksesibilitas dari berbagai perangkat (komputer, tablet, dan smartphone) dan browser (Chrome, Firefox, Safari, Edge) untuk memastikan kompatibilitas yang luas.</li>
+</ol>
+
+<p>Dengan publikasi berbasis web, pengguna tidak perlu mengunduh aplikasi, menginstal perangkat lunak tambahan, ataupun menjalankan kode secara mandiri. Cukup dengan membuka browser dan mengakses alamat website <b>vrtourfkip.com</b>, pengguna sudah dapat langsung menikmati pengalaman menjelajah laboratorium secara virtual.</p>
+
+<h4>b. Penyusunan Buku Panduan Penggunaan</h4>
+
+<p>Untuk memudahkan pengguna dalam mengoperasikan Virtual Tour, disusun sebuah Buku Panduan Penggunaan Virtual Tour Laboratorium FKIP (PMIPA). Buku panduan ini memuat informasi-informasi penting sebagai berikut:</p>
+
+<ol>
+    <li><b>Pendahuluan:</b> Penjelasan umum tentang aplikasi Virtual Tour dan cara mengaksesnya melalui website vrtourfkip.com.</li>
+    <li><b>Kebutuhan Sistem:</b> Spesifikasi perangkat yang diperlukan, meliputi perangkat (komputer/laptop, smartphone, atau tablet), browser yang direkomendasikan (Google Chrome, Mozilla Firefox, Safari, atau Microsoft Edge versi terbaru), dan kebutuhan koneksi internet yang stabil.</li>
+    <li><b>Cara Mengakses Virtual Tour:</b> Langkah-langkah sistematis untuk membuka dan memulai Virtual Tour, mulai dari membuka browser, mengetik alamat website, hingga mulai menjelajah.</li>
+    <li><b>Panduan Navigasi dan Interaksi:</b> Petunjuk detail cara menggunakan fitur-fitur navigasi, termasuk cara melihat sekeliling (Pan &amp; Tilt 360 derajat), cara memperbesar/memperkecil (Zoom In &amp; Zoom Out), cara berpindah ruangan melalui hotspot, dan cara berinteraksi dengan informasi tambahan.</li>
+    <li><b>Daftar Area yang Tersedia:</b> Informasi lengkap tentang area-area yang dapat dijelajahi, meliputi Lantai 1, Lantai 2, Lab Fisika, Lab Matematika, Lab Biologi, Lab Kimia, dan Lab Komputer.</li>
+    <li><b>Tips Tambahan:</b> Saran penggunaan untuk pengalaman optimal, seperti penggunaan landscape mode pada smartphone dan pemanfaatan fitur fullscreen.</li>
+</ol>
+
+<h4>c. Ujicoba Produk</h4>
+
+<p>Ujicoba produk dilakukan untuk memverifikasi fungsionalitas dan kinerja Virtual Tour pada berbagai kondisi penggunaan. Aspek-aspek yang diujicobakan meliputi:</p>
+
+<ol>
+    <li><b>Kompatibilitas Browser:</b> Pengujian pada Google Chrome, Mozilla Firefox, Safari, dan Microsoft Edge untuk memastikan tampilan dan fungsi berjalan dengan baik pada seluruh browser utama.</li>
+    <li><b>Kompatibilitas Perangkat:</b> Pengujian pada komputer/laptop, tablet, dan smartphone (Android dan iOS) untuk memastikan responsivitas dan fungsionalitas pada berbagai ukuran layar.</li>
+    <li><b>Fungsionalitas Navigasi:</b> Pengujian seluruh hotspot navigasi untuk memastikan perpindahan antar ruangan berfungsi dengan benar dan transisi berjalan mulus.</li>
+    <li><b>Kinerja Loading:</b> Pengujian waktu loading dan responsivitas pada berbagai kecepatan koneksi internet untuk memastikan pengalaman pengguna yang baik.</li>
+    <li><b>Kualitas Visual:</b> Verifikasi kualitas gambar panorama pada berbagai level zoom untuk memastikan gambar tetap tajam dan detail.</li>
+</ol>
+
+<h3>4.1.5 Tahap Evaluasi (<i>Evaluation</i>)</h3>
+
+<p>Tahap evaluasi merupakan tahap penilaian terhadap produk Virtual Tour yang telah dikembangkan dan diimplementasikan. Evaluasi dilakukan secara formatif (selama proses pengembangan) dan sumatif (setelah implementasi) untuk mengukur kualitas dan efektivitas produk.</p>
+
+<h4>a. Evaluasi Formatif</h4>
+
+<p>Evaluasi formatif dilakukan selama proses pengembangan untuk mengidentifikasi dan memperbaiki permasalahan secara dini. Aspek-aspek yang dievaluasi meliputi:</p>
+
+<ol>
+    <li><b>Kualitas Gambar Panorama:</b> Evaluasi terhadap ketajaman, warna, pencahayaan, dan kelengkapan sudut pandang pada setiap panorama. Gambar yang kurang memenuhi standar kualitas diambil ulang atau dilakukan perbaikan melalui proses editing.</li>
+    <li><b>Akurasi Navigasi:</b> Evaluasi terhadap ketepatan posisi dan sudut pandang hotspot navigasi agar sesuai dengan tata letak fisik laboratorium sebenarnya. Setiap nilai <i>yaw</i>, <i>pitch</i>, dan <i>backwardYaw</i> pada konfigurasi panorama disesuaikan secara presisi.</li>
+    <li><b>Konsistensi Antarmuka:</b> Evaluasi terhadap keseragaman tampilan dan perilaku antarmuka di seluruh modul Virtual Tour.</li>
+    <li><b>Kelancaran Transisi:</b> Evaluasi terhadap kelancaran efek transisi antar panorama (<i>FadeIn</i> dan <i>FadeOut</i>) dan kecepatan rotasi kamera otomatis.</li>
+</ol>
+
+<h4>b. Evaluasi Sumatif</h4>
+
+<p>Evaluasi sumatif dilakukan setelah produk Virtual Tour selesai dikembangkan dan diimplementasikan. Evaluasi ini bertujuan untuk mengukur kualitas produk secara keseluruhan dari berbagai aspek:</p>
+
+<ol>
+    <li><b>Aspek Fungsionalitas:</b> Menilai apakah seluruh fitur Virtual Tour berfungsi sebagaimana mestinya, termasuk navigasi panorama 360 derajat, hotspot perpindahan ruangan, peta interaktif, zoom in/zoom out, dan kompatibilitas lintas perangkat.</li>
+    <li><b>Aspek Usabilitas:</b> Menilai kemudahan penggunaan Virtual Tour oleh pengguna target, termasuk kemudahan navigasi, kejelasan ikon dan hotspot, serta efektivitas panduan penggunaan.</li>
+    <li><b>Aspek Kualitas Visual:</b> Menilai kualitas gambar panorama, ketajaman detail ruangan, kesesuaian warna, dan kejelasan elemen visual antarmuka.</li>
+    <li><b>Aspek Kinerja Teknis:</b> Menilai kecepatan loading, responsivitas interaksi, dan stabilitas aplikasi pada berbagai perangkat dan kondisi jaringan.</li>
+    <li><b>Aspek Konten:</b> Menilai kelengkapan dan keakuratan informasi yang disajikan, cakupan area laboratorium yang divisualisasikan, dan relevansi konten dengan kebutuhan pengguna.</li>
+</ol>
+
+<h4>c. Hasil Evaluasi Produk</h4>
+
+<p>Berdasarkan evaluasi yang telah dilakukan, diperoleh hasil sebagai berikut:</p>
+
+<table>
+    <tr>
+        <th>No.</th>
+        <th>Aspek Evaluasi</th>
+        <th>Hasil</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>Fungsionalitas</td>
+        <td>Seluruh fitur navigasi, hotspot, peta interaktif, dan kontrol pengguna berfungsi dengan baik pada berbagai browser dan perangkat.</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>Usabilitas</td>
+        <td>Antarmuka pengguna intuitif dan mudah dioperasikan. Buku panduan memberikan petunjuk yang jelas bagi pengguna baru.</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Kualitas Visual</td>
+        <td>Gambar panorama berkualitas tinggi (resolusi hingga 4096px) dengan detail ruangan yang jelas dan warna yang akurat.</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>Kinerja Teknis</td>
+        <td>Sistem tiling multi-level memungkinkan loading yang efisien. Preloading aset mengurangi waktu tunggu pengguna.</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>Kelengkapan Konten</td>
+        <td>Mencakup 7 area utama (2 koridor dan 5 laboratorium) yang merepresentasikan fasilitas laboratorium FKIP (PMIPA) secara komprehensif.</td>
+    </tr>
+</table>
+
+<p>Berdasarkan hasil evaluasi secara keseluruhan, produk Virtual Tour Laboratorium FKIP (PMIPA) telah memenuhi kriteria kelayakan sebagai media pengenalan fasilitas laboratorium yang interaktif, imersif, dan mudah diakses. Produk ini berhasil menyajikan visualisasi panorama 360 derajat dari seluruh fasilitas laboratorium FKIP (PMIPA) melalui platform berbasis web yang dapat diakses melalui <b>vrtourfkip.com</b>, sehingga memberikan pengalaman eksplorasi virtual yang mendekati pengalaman kunjungan langsung ke laboratorium.</p>
+
+<h4>d. Revisi dan Penyempurnaan Produk</h4>
+
+<p>Berdasarkan masukan dan temuan dari proses evaluasi, dilakukan beberapa revisi dan penyempurnaan terhadap produk, antara lain:</p>
+
+<ol>
+    <li>Optimalisasi kualitas gambar panorama pada beberapa titik yang dinilai kurang optimal dari segi pencahayaan dan ketajaman.</li>
+    <li>Penyesuaian posisi dan sudut hotspot navigasi agar lebih intuitif dan sesuai dengan arah navigasi yang diharapkan pengguna.</li>
+    <li>Peningkatan kecepatan loading melalui optimalisasi ukuran file gambar dan konfigurasi <i>on-demand loading</i> yang lebih efisien.</li>
+    <li>Penambahan video preloader yang lebih informatif dengan animasi loading yang menarik pada setiap modul Virtual Tour.</li>
+    <li>Perbaikan kompatibilitas pada beberapa perangkat mobile yang sebelumnya mengalami kendala pada fitur autoplay video dan responsivitas tampilan.</li>
+</ol>
+
+<p>Setelah dilakukan revisi, produk final Virtual Tour Laboratorium FKIP (PMIPA) dinyatakan layak dan siap digunakan sebagai media pengenalan fasilitas laboratorium yang dapat diakses secara daring oleh seluruh sivitas akademika dan masyarakat umum melalui website <b>vrtourfkip.com</b>.</p>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office"
+      xmlns:w="urn:schemas-microsoft-com:office:word"
+      xmlns="http://www.w3.org/TR/REC-html40">
+<head>
+    <meta charset="utf-8">
+    <title>Buku Panduan VR Lab PMIPA</title>
+    <style>
+        body { font-family: 'Times New Roman', Times, serif; font-size: 12pt; line-height: 1.5; margin: 1in; }
+        h1 { text-align: center; font-size: 16pt; font-weight: bold; margin-bottom: 20px; }
+        h2 { font-size: 14pt; font-weight: bold; margin-top: 20px; margin-bottom: 10px; }
+        h3 { font-size: 12pt; font-weight: bold; margin-top: 15px; margin-bottom: 5px; }
+        p { text-align: justify; margin-bottom: 10px; }
+        ul, ol { margin-left: 20px; margin-bottom: 10px; }
+        li { margin-bottom: 5px; text-align: justify; }
+        .cover { text-align: center; margin-top: 100px; margin-bottom: 100px; }
+        .cover h1 { font-size: 24pt; }
+        .cover h2 { font-size: 18pt; font-weight: normal; }
+    </style>
+</head>
+<body>
+    <div class="cover">
+        <h1>BUKU PANDUAN PENGGUNAAN</h1>
+        <h2>VIRTUAL TOUR LABORATORIUM FKIP (PMIPA)</h2>
+        <br><br><br>
+        <p style="text-align:center;"><b>Fakultas Keguruan dan Ilmu Pendidikan</b></p>
+    </div>
+    
+    <br clear="all" style="page-break-before:always" />
+
+    <h2>1. Pendahuluan</h2>
+    <p>Buku panduan ini disusun untuk memberikan petunjuk penggunaan aplikasi Virtual Tour / Virtual Reality (VR) Laboratorium FKIP (PMIPA). Aplikasi VR ini dirancang menggunakan teknologi panorama 360 derajat interaktif untuk memberikan pengalaman imersif dalam menjelajahi berbagai fasilitas laboratorium, seperti Lab Fisika, Lab Matematika, dan fasilitas di Lantai 1 maupun Lantai 2.</p>
+    <p><b>Catatan Penting:</b> Aplikasi VR ini dapat diakses secara langsung melalui website <b><a href="http://vrtourfkip.com">vrtourfkip.com</a></b>. Pengguna tidak perlu mengunduh aplikasi, menginstal perangkat lunak tambahan, ataupun menjalankan kode secara mandiri. Cukup buka browser dan nikmati pengalaman menjelajah laboratorium secara virtual.</p>
+
+    <h2>2. Kebutuhan Sistem</h2>
+    <p>Untuk dapat menjalankan Virtual Tour ini dengan lancar, pastikan perangkat Anda memenuhi spesifikasi dasar berikut:</p>
+    <ul>
+        <li><b>Perangkat:</b> Komputer/Laptop, Smartphone (Android/iOS), atau Tablet.</li>
+        <li><b>Browser:</b> Direkomendasikan menggunakan Google Chrome, Mozilla Firefox, Safari, atau Microsoft Edge versi terbaru.</li>
+        <li><b>Koneksi Internet:</b> Membutuhkan koneksi internet yang stabil untuk memuat gambar dan aset dengan cepat.</li>
+    </ul>
+
+    <h2>3. Cara Mengakses Virtual Tour</h2>
+    <ol>
+        <li>Buka aplikasi browser (Google Chrome / Safari / Firefox) di perangkat Anda.</li>
+        <li>Ketik alamat website berikut pada kolom URL (Address Bar): <b>vrtourfkip.com</b></li>
+        <li>Tekan <b>Enter</b>, lalu tunggu beberapa saat hingga halaman virtual tour dan aset visual selesai dimuat (loading).</li>
+        <li>Setelah loading selesai, Anda akan langsung berada di titik awal tour (Lantai 1) dan siap untuk mulai menjelajah.</li>
+    </ol>
+
+    <h2>4. Navigasi dan Interaksi (Cara Penggunaan)</h2>
+    <p>Virtual tour ini sangat mudah dioperasikan. Berikut adalah panduan kontrol navigasi yang dapat Anda gunakan:</p>
+    
+    <h3>4.1. Melihat Sekeliling (Pan & Tilt 360 Derajat)</h3>
+    <ul>
+        <li><b>Pada Komputer/Laptop:</b> Klik kiri dan tahan pada gambar, lalu geser mouse (drag) ke kiri, kanan, atas, atau bawah untuk melihat sekeliling ruangan.</li>
+        <li><b>Pada Smartphone/Tablet:</b> Sentuh layar, tahan, dan geser (swipe) jari Anda ke arah yang diinginkan. Anda juga bisa menggunakan fitur <i>Gyroscope</i> (sensor gerak HP) jika perangkat mendukung, cukup gerakkan ponsel Anda ke sekeliling.</li>
+    </ul>
+
+    <h3>4.2. Memperbesar dan Memperkecil (Zoom In & Zoom Out)</h3>
+    <ul>
+        <li><b>Pada Komputer/Laptop:</b> Putar roda gulir (scroll wheel) pada mouse Anda ke depan untuk <i>Zoom In</i> dan ke belakang untuk <i>Zoom Out</i>.</li>
+        <li><b>Pada Smartphone/Tablet:</b> Gunakan dua jari dengan gerakan mencubit keluar (pinch out) untuk <i>Zoom In</i>, dan mencubit ke dalam (pinch in) untuk <i>Zoom Out</i>.</li>
+    </ul>
+
+    <h3>4.3. Berpindah Ruangan (Hotspots Navigasi)</h3>
+    <p>Anda akan melihat berbagai ikon penunjuk arah atau titik (hotspots) yang melayang pada gambar. Ikon ini berfungsi sebagai pintu atau jalan menuju ruangan lain.</p>
+    <ul>
+        <li>Arahkan kursor atau pandangan ke arah ikon (misalnya panah menuju Lab Fisika atau Lab Matematika).</li>
+        <li>Klik (atau tap pada layar sentuh) ikon tersebut.</li>
+        <li>Sistem akan secara otomatis memindahkan sudut pandang Anda ke ruangan atau lokasi baru tersebut.</li>
+    </ul>
+
+    <h3>4.4. Berinteraksi dengan Informasi Tambahan</h3>
+    <p>Di beberapa area, mungkin terdapat ikon khusus (seperti ikon <i>i</i> / info, video, atau gambar). Klik ikon tersebut untuk memunculkan pop-up yang berisi deskripsi peralatan lab, video demonstrasi, atau informasi detail lainnya.</p>
+
+    <h2>5. Daftar Area Utama yang Tersedia</h2>
+    <p>Dalam Virtual Tour FKIP (PMIPA) ini, Anda dapat menjelajahi beberapa area utama berikut:</p>
+    <ul>
+        <li><b>Lantai 1:</b> Merupakan titik awal (titik mulai utama).</li>
+        <li><b>Lantai 2:</b> Area eksplorasi tambahan di tingkat atas.</li>
+        <li><b>Laboratorium Fisika (Labfis):</b> Area simulasi dan peralatan praktik fisika.</li>
+        <li><b>Laboratorium Matematika (Labmath):</b> Area pembelajaran dan praktik matematika.</li>
+    </ul>
+
+    <h2>6. Tips Tambahan</h2>
+    <ul>
+        <li>Untuk pengalaman terbaik di Smartphone, disarankan menggunakan posisi layar mendatar (<b>Landscape Mode</b>).</li>
+        <li>Gunakan fitur <b>Fullscreen (Layar Penuh)</b> yang biasanya tersedia melalui tombol di pojok layar untuk pengalaman yang lebih menyeluruh (imersif) tanpa gangguan antarmuka browser.</li>
+        <li>Jika gambar terasa kabur saat berpindah ruangan, tunggu beberapa saat hingga koneksi internet memuat gambar dengan resolusi penuh.</li>
+    </ul>
+    
+    <br><br><br>
+    <p style="text-align:center;"><i>Buku panduan ini dibuat untuk memudahkan sivitas akademika dalam memanfaatkan fasilitas Virtual Reality Laboratorium PMIPA FKIP.</i></p>
+</body>
+</html>
