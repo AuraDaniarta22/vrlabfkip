@@ -8763,15 +8763,15 @@
             "scrollBarVisible": "rollOver",
             "left": "0.29%",
             "overflow": "scroll",
-            "width": "30.348%",
+            "width": "85%",
             "scrollBarMargin": 2,
             "borderRadius": 0,
             "minHeight": 1,
             "paddingLeft": 0,
-            "propagateClick": false,
+            "propagateClick": true,
             "paddingRight": 0,
             "top": "1.2%",
-            "minWidth": 1,
+            "minWidth": 350,
             "verticalAlign": "top",
             "scrollBarWidth": 10,
             "borderSize": 0,
@@ -15954,7 +15954,7 @@
             "textShadowVerticalLength": 1,
             "verticalAlign": "middle",
             "height": "58.75%",
-            "fontSize": "2.84vh",
+            "fontSize": "3vmin",
             "class": "Label",
             "paddingTop": 0,
             "fontStyle": "normal",
@@ -15990,7 +15990,7 @@
             "minWidth": 1,
             "textShadowVerticalLength": 1,
             "height": "58.75%",
-            "fontSize": "2.41vh",
+            "fontSize": "2.5vmin",
             "class": "Label",
             "fontStyle": "normal",
             "paddingTop": 0,
@@ -17594,3 +17594,7 @@
 
     TDV.PlayerAPI.defineScript(script);
 })();
+
+
+
+

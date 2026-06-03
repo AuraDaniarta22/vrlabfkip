@@ -8531,7 +8531,7 @@
             "scrollBarVisible": "rollOver",
             "scrollBarOpacity": 0.5,
             "scrollBarColor": "#000000",
-            "width": "31.112%",
+            "width": "85%",
             "verticalAlign": "top",
             "layout": "absolute",
             "paddingLeft": 0,
@@ -8539,7 +8539,7 @@
             "top": "1.2%",
             "paddingRight": 0,
             "scrollBarMargin": 2,
-            "minWidth": 1,
+            "minWidth": 350,
             "contentOpaque": false,
             "borderSize": 0,
             "height": "11.004%",
@@ -8547,7 +8547,7 @@
             "gap": 10,
             "class": "Container",
             "paddingTop": 0,
-            "propagateClick": false,
+            "propagateClick": true,
             "data": {
                 "name": "Tittle"
             },
@@ -15167,7 +15167,7 @@
             "top": "0%",
             "height": "58.75%",
             "minWidth": 1,
-            "fontSize": "2.84vh",
+            "fontSize": "3vmin",
             "borderSize": 0,
             "paddingBottom": 0,
             "fontStyle": "normal",
@@ -15203,7 +15203,7 @@
             "bottom": "2.5%",
             "height": "58.75%",
             "minWidth": 1,
-            "fontSize": "2.41vh",
+            "fontSize": "2.5vmin",
             "borderSize": 0,
             "paddingBottom": 0,
             "paddingTop": 0,
@@ -16547,3 +16547,7 @@
 
     TDV.PlayerAPI.defineScript(script);
 })();
+
+
+
+

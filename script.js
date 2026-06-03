@@ -3535,8 +3535,8 @@
             "horizontalAlign": "left",
             "shadow": false,
             "borderSize": 0,
-            "minWidth": 1,
-            "width": "27.334%",
+            "minWidth": 350,
+            "width": "85%",
             "scrollBarMargin": 2,
             "contentOpaque": false,
             "paddingRight": 0,
@@ -3550,9 +3550,9 @@
             "borderRadius": 0,
             "gap": 10,
             "paddingBottom": 0,
-            "visible": false,
+            "visible": true,
             "scrollBarWidth": 10,
-            "propagateClick": false,
+            "propagateClick": true,
             "overflow": "scroll"
         },
         {
@@ -3620,8 +3620,8 @@
             "horizontalAlign": "left",
             "shadow": false,
             "borderSize": 0,
-            "minWidth": 1,
-            "width": "27.334%",
+            "minWidth": 350,
+            "width": "85%",
             "scrollBarMargin": 2,
             "contentOpaque": false,
             "paddingRight": 0,
@@ -3635,9 +3635,9 @@
             "borderRadius": 0,
             "gap": 10,
             "paddingBottom": 0,
-            "visible": false,
+            "visible": true,
             "scrollBarWidth": 10,
-            "propagateClick": false,
+            "propagateClick": true,
             "overflow": "scroll"
         },
         {
@@ -6167,7 +6167,7 @@
             "paddingLeft": 0,
             "height": "58.75%",
             "top": "0%",
-            "fontSize": "2.84vh",
+            "fontSize": "3vmin",
             "paddingTop": 0,
             "class": "Label",
             "textShadowBlurRadius": 3,
@@ -6241,7 +6241,7 @@
             "paddingLeft": 0,
             "height": "58.75%",
             "top": "0%",
-            "fontSize": "2.84vh",
+            "fontSize": "3vmin",
             "paddingTop": 0,
             "class": "Label",
             "textShadowBlurRadius": 3,
@@ -6864,3 +6864,7 @@
 
     TDV.PlayerAPI.defineScript(script);
 })();
+
+
+
+
