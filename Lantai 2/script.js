@@ -2088,7 +2088,7 @@
                     "mapColor": "#FF0000",
                     "class": "HotspotPanoramaOverlayArea",
                     "toolTip": "Laboratorium Pembelajaran Biologi",
-                    "click": "this.openLink('Labbio/index.htm', '_self')"
+                    "click": "this.openLink('labbio/index.htm', '_self')"
                 }
             ],
             "useHandCursor": true,

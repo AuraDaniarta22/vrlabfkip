@@ -4955,7 +4955,7 @@
                     "class": "HotspotPanoramaOverlayArea",
                     "mapColor": "#FF0000",
                     "toolTip": "Laboratorium Pembelajaran Matematika",
-                    "click": "this.openLink('../Labmath/index.htm', '_self')"
+                    "click": "this.openLink('../labmath/index.htm', '_self')"
                 }
             ],
             "id": "overlay_023878E1_1358_FC40_41B1_61AED61DED92",

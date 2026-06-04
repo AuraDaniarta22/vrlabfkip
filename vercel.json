@@ -1,38 +1,39 @@
 {
+  "cleanUrls": false,
+  "trailingSlash": false,
   "rewrites": [
+    { "source": "/Labmath/index.htm", "destination": "/labmath/index.htm" },
+    { "source": "/Labmath", "destination": "/labmath/index.htm" },
+    { "source": "/Labmath/", "destination": "/labmath/index.htm" },
+    { "source": "/Labmath/(.*)", "destination": "/labmath/$1" },
+
+    { "source": "/Lantai 2/Labbio/index.htm", "destination": "/Lantai 2/labbio/index.htm" },
+    { "source": "/Lantai%202/Labbio/index.htm", "destination": "/Lantai 2/labbio/index.htm" },
+    { "source": "/Lantai 2/Labbio", "destination": "/Lantai 2/labbio/index.htm" },
+    { "source": "/Lantai 2/Labbio/", "destination": "/Lantai 2/labbio/index.htm" },
+    { "source": "/Lantai 2/Labbio/(.*)", "destination": "/Lantai 2/labbio/$1" },
+    { "source": "/Lantai%202/Labbio/(.*)", "destination": "/Lantai 2/labbio/$1" },
+
+    { "source": "/Lantai 2/labkim/index.htm", "destination": "/Lantai 2/labkim/index.htm" },
+    { "source": "/Lantai 2/labkom/index.htm", "destination": "/Lantai 2/labkom/index.htm" },
+
     { "source": "/Labfis", "destination": "/Labfis/index.htm" },
     { "source": "/Labfis/", "destination": "/Labfis/index.htm" },
     
     { "source": "/labmath", "destination": "/labmath/index.htm" },
     { "source": "/labmath/", "destination": "/labmath/index.htm" },
-    { "source": "/Labmath", "destination": "/labmath/index.htm" },
-    { "source": "/Labmath/", "destination": "/labmath/index.htm" },
-    { "source": "/Labmath/(.*)", "destination": "/labmath/$1" },
 
-    { "source": "/Lantai%202", "destination": "/Lantai%202/index.htm" },
-    { "source": "/Lantai%202/", "destination": "/Lantai%202/index.htm" },
     { "source": "/Lantai 2", "destination": "/Lantai 2/index.htm" },
     { "source": "/Lantai 2/", "destination": "/Lantai 2/index.htm" },
-
-    { "source": "/Lantai%202/labbio", "destination": "/Lantai%202/labbio/index.htm" },
-    { "source": "/Lantai%202/labbio/", "destination": "/Lantai%202/labbio/index.htm" },
-    { "source": "/Lantai%202/Labbio", "destination": "/Lantai%202/labbio/index.htm" },
-    { "source": "/Lantai%202/Labbio/", "destination": "/Lantai%202/labbio/index.htm" },
-    { "source": "/Lantai%202/Labbio/(.*)", "destination": "/Lantai%202/labbio/$1" },
+    { "source": "/Lantai%202", "destination": "/Lantai 2/index.htm" },
+    { "source": "/Lantai%202/", "destination": "/Lantai 2/index.htm" },
 
     { "source": "/Lantai 2/labbio", "destination": "/Lantai 2/labbio/index.htm" },
     { "source": "/Lantai 2/labbio/", "destination": "/Lantai 2/labbio/index.htm" },
-    { "source": "/Lantai 2/Labbio", "destination": "/Lantai 2/labbio/index.htm" },
-    { "source": "/Lantai 2/Labbio/", "destination": "/Lantai 2/labbio/index.htm" },
-    { "source": "/Lantai 2/Labbio/(.*)", "destination": "/Lantai 2/labbio/$1" },
 
-    { "source": "/Lantai%202/labkim", "destination": "/Lantai%202/labkim/index.htm" },
-    { "source": "/Lantai%202/labkim/", "destination": "/Lantai%202/labkim/index.htm" },
     { "source": "/Lantai 2/labkim", "destination": "/Lantai 2/labkim/index.htm" },
     { "source": "/Lantai 2/labkim/", "destination": "/Lantai 2/labkim/index.htm" },
 
-    { "source": "/Lantai%202/labkom", "destination": "/Lantai%202/labkom/index.htm" },
-    { "source": "/Lantai%202/labkom/", "destination": "/Lantai%202/labkom/index.htm" },
     { "source": "/Lantai 2/labkom", "destination": "/Lantai 2/labkom/index.htm" },
     { "source": "/Lantai 2/labkom/", "destination": "/Lantai 2/labkom/index.htm" },
 
