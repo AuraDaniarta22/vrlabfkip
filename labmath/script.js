@@ -3338,9 +3338,9 @@
         },
         {
             "enabledInCardboard": true,
-            "autoplay": false,
+            "autoplay": true,
             "id": "overlay_5100FA67_5E7E_98C2_41D1_25DADAB1B623",
-            "loop": false,
+            "loop": true,
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -3360,11 +3360,10 @@
             "yaw": -154.6,
             "class": "VideoPanoramaOverlay",
             "vfov": 20.08,
-            "videoVisibleOnStop": false,
+            "videoVisibleOnStop": true,
             "rotationX": 3.74,
             "blending": 0,
             "distance": 50,
-            "click": "this.overlay_5100FA67_5E7E_98C2_41D1_25DADAB1B623.play()",
             "data": {
                 "label": "Video"
             },
@@ -3502,9 +3501,9 @@
         },
         {
             "enabledInCardboard": true,
-            "autoplay": false,
+            "autoplay": true,
             "id": "overlay_E5039074_FCCB_DAAF_41CA_4C1B0764B321",
-            "loop": false,
+            "loop": true,
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -3524,11 +3523,10 @@
             "yaw": 157.7,
             "class": "VideoPanoramaOverlay",
             "vfov": 11.85,
-            "videoVisibleOnStop": false,
+            "videoVisibleOnStop": true,
             "rotationX": -9.26,
             "blending": 0,
             "distance": 50,
-            "click": "this.overlay_E5039074_FCCB_DAAF_41CA_4C1B0764B321.play()",
             "data": {
                 "label": "Video"
             },
@@ -3948,9 +3946,9 @@
         },
         {
             "enabledInCardboard": true,
-            "autoplay": false,
+            "autoplay": true,
             "id": "overlay_4E769905_5E7E_B846_41C5_4CFBB54C2AB0",
-            "loop": false,
+            "loop": true,
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -3970,11 +3968,10 @@
             "yaw": -51.44,
             "class": "VideoPanoramaOverlay",
             "vfov": 31.46,
-            "videoVisibleOnStop": false,
+            "videoVisibleOnStop": true,
             "rotationX": -0.71,
             "blending": 0,
             "distance": 50,
-            "click": "this.overlay_4E769905_5E7E_B846_41C5_4CFBB54C2AB0.play()",
             "data": {
                 "label": "Video"
             },
@@ -4033,9 +4030,9 @@
         },
         {
             "enabledInCardboard": true,
-            "autoplay": false,
+            "autoplay": true,
             "id": "overlay_510E5742_5E7F_E8C2_41C4_B807BC97989E",
-            "loop": false,
+            "loop": true,
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4055,11 +4052,10 @@
             "yaw": -161.5,
             "class": "VideoPanoramaOverlay",
             "vfov": 14.62,
-            "videoVisibleOnStop": false,
+            "videoVisibleOnStop": true,
             "rotationX": 4.92,
             "blending": 0,
             "distance": 50,
-            "click": "this.overlay_510E5742_5E7F_E8C2_41C4_B807BC97989E.play()",
             "data": {
                 "label": "Video"
             },
