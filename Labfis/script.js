@@ -4398,7 +4398,7 @@
  "buttonCardboardView": "this.IconButton_B156D269_BF46_B846_41E3_844E5B5A8AE7",
  "buttonToggleHotspots": "this.IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781",
  "viewerArea": "this.MainViewer",
- "touchControlMode": "drag_rotation",
+ "touchControlMode": "drag_acceleration",
  "id": "MainViewerPanoramaPlayer",
  "gyroscopeVerticalDraggingEnabled": true,
  "displayPlaybackBar": true,

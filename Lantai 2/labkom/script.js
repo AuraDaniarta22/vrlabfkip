@@ -1970,7 +1970,7 @@
  "displayPlaybackBar": true,
  "viewerArea": "this.MainViewer",
  "id": "MainViewerPanoramaPlayer",
- "touchControlMode": "drag_rotation",
+ "touchControlMode": "drag_acceleration",
  "gyroscopeVerticalDraggingEnabled": false,
  "buttonToggleGyroscope": "this.IconButton_B156C269_BF46_B846_41B6_1BAAE2858250",
  "mouseControlMode": "drag_acceleration"
