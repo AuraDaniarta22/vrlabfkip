@@ -5221,6 +5221,7 @@
  "width": 45.5,
  "minHeight": 0,
  "toolTip": "Ruangan",
+ "click": "document.getElementById('roomModal').style.display='flex'",
  "horizontalAlign": "center",
  "toolTipBackgroundColor": "#F6F6F6",
  "toolTipFontColor": "#606060",

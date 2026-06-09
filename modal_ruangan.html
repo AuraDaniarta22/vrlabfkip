@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop-up Fasilitas Laboratorium</title>
+    <style>
+        /* =================================================================
+           1. Container Utama (Overlay Background)
+           ================================================================= */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.60);
+            z-index: 9999;
+            /* Flex digunakan untuk pusatkan modal di mobile fallback */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* =================================================================
+           2. Container Dalam (class: list_room)
+           ================================================================= */
+        .list_room {
+            position: absolute;
+            /* Default untuk Laptop hingga Layar XL (min-width: 1025px) */
+            top: 10%;
+            bottom: 10%;
+            left: 15%;
+            right: 15%;
+            
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); /* Efek drop shadow lembut & menonjol */
+            overflow-y: auto; /* Bisa discroll jika konten berlebih */
+            padding: 30px;
+            
+            /* Susunan Grid untuk Kartu Ruangan (Default: 3 Kolom) */
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-content: start; /* Pastikan konten rapat di atas */
+            
+            /* Kustomisasi Scrollbar agar lebih elegan */
+            scrollbar-width: thin;
+            scrollbar-color: #bbbbbb #f1f1f1;
+        }
+
+        .list_room::-webkit-scrollbar {
+            width: 8px;
+        }
+        .list_room::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            border-radius: 8px;
+        }
+        .list_room::-webkit-scrollbar-thumb {
+            background: #bbbbbb; 
+            border-radius: 8px;
+        }
+
+        /* Styling Judul Modal (Tambahan untuk mempercantik) */
+        .list_room_title {
+            grid-column: 1 / -1; /* Mengambil seluruh ruang kolom */
+            text-align: center;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        /* =================================================================
+           3. Item Container (Kartu Ruangan Lab)
+           ================================================================= */
+        .room-card {
+            display: flex;
+            flex-direction: column;
+            text-decoration: none;
+            background-color: #fcfcfc;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #e0e0e0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+        }
+
+        /* Efek Hover Interaktif */
+        .room-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            background-color: #ffffff;
+        }
+
+        .room-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 4px solid #3498db; /* Garis aksen biru */
+            transition: filter 0.3s ease;
+        }
+
+        .room-card:hover img {
+            filter: brightness(1.05);
+        }
+
+        .room-card h3 {
+            margin: 16px;
+            font-size: 1.15rem;
+            text-align: center;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #333333;
+            font-weight: 600;
+        }
+
+        /* =================================================================
+           4. Responsivitas Layar (Media Queries)
+           ================================================================= */
+
+        /* Tablet (max-width: 1024px) */
+        @media (max-width: 1024px) {
+            .list_room {
+                grid-template-columns: repeat(2, 1fr); /* 2 Kolom */
+                left: 10%;
+                right: 10%;
+            }
+        }
+
+        /* Mobile S hingga L (max-width: 768px) */
+        @media (max-width: 768px) {
+            .list_room {
+                /* Jarak tepi diperkecil jadi 5% */
+                top: 5%;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
+                padding: 20px;
+                grid-template-columns: 1fr; /* 1 Kolom Penuh */
+                gap: 20px;
+            }
+            
+            .room-card img {
+                height: 200px; /* Gambar sedikit lebih tinggi di mobile */
+            }
+
+            .list_room_title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body style="margin: 0; background-color: #f0f0f0; font-family: sans-serif;">
+
+    <!-- Tombol Pemicu Pop-up (Hanya untuk mempermudah Anda melakukan testing) -->
+    <div style="padding: 20px; text-align: center;">
+        <button id="btnOpenModal" style="padding: 12px 24px; font-size: 16px; cursor: pointer; background-color: #3498db; color: white; border: none; border-radius: 6px; font-weight: bold;">
+            Buka Menu Fasilitas
+        </button>
+        <p style="color: #666; margin-top: 10px;">(Klik tombol di atas untuk melihat desain pop-up)</p>
+    </div>
+
+    <!-- =================================================================
+         STRUKTUR HTML POP-UP MODAL
+         ================================================================= -->
+    <!-- 1. Container Utama (Overlay Background) -->
+    <div id="roomModal" class="modal-overlay" style="display: none;">
+        
+        <!-- 2. Container Dalam -->
+        <div class="list_room">
+            <h2 class="list_room_title">Pilih Fasilitas Ruangan</h2>
+            
+            <!-- 3. Item Container -->
+            <!-- ID: labfis -->
+            <a href="Labfis/index.htm" class="room-card" id="labfis">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=400&q=80" alt="Laboratorium Fisika">
+                <h3>Laboratorium Fisika</h3>
+            </a>
+
+            <!-- ID: labkom -->
+            <a href="labkom/index.htm" class="room-card" id="labkom">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=400&q=80" alt="Laboratorium Komputer">
+                <h3>Laboratorium Komputer</h3>
+            </a>
+
+            <!-- ID: labbio -->
+            <a href="Labbio/index.htm" class="room-card" id="labbio">
+                <img src="https://images.unsplash.com/photo-1530213786676-412f672323f4?auto=format&fit=crop&w=400&q=80" alt="Laboratorium Biologi">
+                <h3>Laboratorium Biologi</h3>
+            </a>
+
+            <!-- ID: labmath -->
+            <a href="labmath/index.htm" class="room-card" id="labmath">
+                <img src="https://images.unsplash.com/photo-1509228468518-180dd4864904?auto=format&fit=crop&w=400&q=80" alt="Laboratorium Matematika">
+                <h3>Laboratorium Matematika</h3>
+            </a>
+
+            <!-- ID: labkim -->
+            <a href="labkim/index.htm" class="room-card" id="labkim">
+                <img src="https://images.unsplash.com/photo-1603126857599-f6e157824fce?auto=format&fit=crop&w=400&q=80" alt="Laboratorium Kimia">
+                <h3>Laboratorium Kimia</h3>
+            </a>
+            
+        </div>
+    </div>
+
+    <!-- =================================================================
+         FUNGSI JAVASCRIPT
+         ================================================================= -->
+    <script>
+        const modal = document.getElementById('roomModal');
+        const btnOpen = document.getElementById('btnOpenModal');
+
+        // Fungsi opsional untuk menampilkan modal (untuk keperluan testing)
+        btnOpen.addEventListener('click', function() {
+            modal.style.display = 'block';
+        });
+
+        // 1. Fitur Auto-Hide: Tutup modal saat background hitam di-klik
+        modal.addEventListener('click', function(event) {
+            // Memastikan event klik tepat berada di "modal-overlay" (background hitam),
+            // BUKAN di dalam "list_room" (container putih) atau elemen turunannya
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+</body>
+</html>
