@@ -684,25 +684,13 @@
  "class": "ImageResource",
  "id": "ImageResource_EFCCC03C_A5D5_E4FA_41E0_CD798C4D61CC",
  "levels": [
-  {
-   "url": "media/zoomImage_BE6CB0C4_A654_E58A_41E2_3EA2B75142A9_0_0.png",
-   "class": "ImageResourceLevel",
-   "width": 1748,
-   "height": 1240
-  },
-  {
-   "url": "media/zoomImage_BE6CB0C4_A654_E58A_41E2_3EA2B75142A9_0_1.png",
-   "class": "ImageResourceLevel",
-   "width": 1024,
-   "height": 726
-  },
-  {
-   "url": "media/zoomImage_BE6CB0C4_A654_E58A_41E2_3EA2B75142A9_0_2.png",
-   "class": "ImageResourceLevel",
-   "width": 512,
-   "height": 363
-  }
- ]
+                  {
+                      "url": "media/panduan_baru.png",
+                      "width": 1024,
+                      "class": "ImageResourceLevel",
+                      "height": 585
+                  }
+              ]
 },
 {
  "class": "ImageResource",
