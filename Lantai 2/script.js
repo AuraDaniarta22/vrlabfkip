@@ -1673,7 +1673,7 @@
  "scrollBarMargin": 2,
  "contentOpaque": false,
  "minWidth": 1,
- "height": 588.15,
+ "height": "80%",
  "top": "0.12%",
  "gap": 10,
  "layout": "absolute",

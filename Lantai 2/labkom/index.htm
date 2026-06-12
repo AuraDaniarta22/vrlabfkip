@@ -339,7 +339,7 @@ loadTour()
         #preloadContainer { z-index:2; position:relative; width:100%; height:100%; transition: opacity 0.5s; -webkit-transition: opacity 0.5s; -moz-transition: opacity 0.5s; -o-transition: opacity 0.5s;}
     
         /* Modal CSS */
-        .modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.60); z-index: 9999; display: flex; justify-content: center; align-items: center; }
+        .modal-overlay { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0, 0, 0, 0.60); z-index: 2147483647; display: flex; justify-content: center; align-items: center; }
         .list_room { position: absolute; top: 10%; bottom: 10%; left: 15%; right: 15%; background-color: #ffffff; border-radius: 12px; box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4); overflow-y: auto; padding: 30px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-content: start; scrollbar-width: thin; scrollbar-color: #bbbbbb #f1f1f1; }
         .list_room::-webkit-scrollbar { width: 8px; }
         .list_room::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 8px; }
@@ -357,21 +357,151 @@ loadTour()
 </head>
 <body onload="onLoad()">
     <div id="preloadContainer" style="background-color:rgba(255,255,255,1)"><div style="z-index: 4; position: absolute; display: flex; align-items: center; text-align: center; overflow: hidden; left: 20.73%; top: 23.9%; width: 53.89%; height: 46.53%"><video id="video_23D2E733_3F31_E3A7_41C4_2258EF58414F" width="100%" height="100%" loop autoplay playsinline webkit-playsinline poster="media/video_23D2E733_3F31_E3A7_41C4_2258EF58414F_poster.jpg" preload="auto"><source src="media/video_23D2E733_3F31_E3A7_41C4_2258EF58414F.mp4" type="video/mp4">Your browser does not support the video tab</video></div></div>
-    <div id="viewer"></div>
+    <div id="viewer"></div>\n<div id="roomModalContainer">
+<div id="roomModal" class="room-modal">
+    <div class="list_room">
+        <h2 class="list_room_title">Pilih Fasilitas Ruangan</h2>
+
+        <!-- 1. Lobby Utama -->
+        <a href="../../index.htm" class="room-card" id="labfkip">
+            <img src="../../media/panorama_18D0E997_1348_5CC0_41AC_A55305EE68DC_0/f/3/0_0.jpg"
+                 alt="Lobby Utama">
+            <h3>Lobby Utama</h3>
+        </a>
+
+        <!-- 2. Laboratorium Fisika -->
+        <a href="../../Labfis/index.htm" class="room-card" id="labfis">
+            <img src="../../Labfis/media/panorama_E1EF1479_ED73_9130_41D3_6188DE9EC37E_0/f/3/0_0.jpg"
+                 alt="Laboratorium Fisika">
+            <h3>Laboratorium Fisika</h3>
+        </a>
+
+        <!-- 3. Laboratorium Komputer -->
+        <a href="../../Lantai 2/labkom/index.htm" class="room-card" id="labkom">
+            <img src="../../Lantai 2/labkom/media/panorama_B8976067_B63F_4C4D_41D4_82276E08E98E_0/f/3/0_0.jpg"
+                 alt="Laboratorium Komputer">
+            <h3>Laboratorium Komputer</h3>
+        </a>
+
+        <!-- 4. Laboratorium Biologi -->
+        <a href="../../Lantai 2/labbio/index.htm" class="room-card" id="labbio">
+            <img src="../../Lantai 2/labbio/media/panorama_0E0E929A_05AE_FA02_4192_9B4DC98898E6_0/f/2/0_0.jpg"
+                 alt="Laboratorium Biologi">
+            <h3>Laboratorium Biologi</h3>
+        </a>
+
+        <!-- 5. Laboratorium Matematika -->
+        <a href="../../labmath/index.htm" class="room-card" id="labmath">
+            <img src="../../labmath/media/panorama_D9F62AAB_C15A_68D9_41D4_2AE0607B38BD_0/f/3/0_0.jpg"
+                 alt="Laboratorium Matematika">
+            <h3>Laboratorium Matematika</h3>
+        </a>
+
+        <!-- 6. Laboratorium Kimia -->
+        <a href="../../Lantai 2/labkim/index.htm" class="room-card" id="labkim">
+            <img src="../../Lantai 2/labkim/media/panorama_0A38E874_0189_C110_4176_1AE8579BAF0C_0/f/2/0_0.jpg"
+                 alt="Laboratorium Kimia">
+            <h3>Laboratorium Kimia</h3>
+        </a>
+
+        <!-- 7. Lantai 2 -->
+        <a href="../../Lantai 2/index.htm" class="room-card" id="lantai2">
+            <img src="../../Lantai 2/media/panorama_0AE493A5_13B8_4CC3_4193_CFEAD1ABDC91_0/f/3/0_0.jpg"
+                 alt="Lantai 2">
+            <h3>Lantai 2</h3>
+        </a>
+    </div>
+</div>
+
+<script>
+    // Script untuk menutup modal saat klik di luar container putih
+    document.addEventListener("DOMContentLoaded", function() {
+        var modal = document.getElementById("roomModal");
+        if(modal) {
+            modal.addEventListener("click", function(e) {
+                if (e.target === modal) {
+                    modal.style.display = "none";
+                }
+            });
+        }
+        
+        // Auto-hook into the Fasilitas Ruangan button icon
+        setInterval(function() {
+            var icons = document.querySelectorAll('div[style*="IconButton_81807A14_A3D3_C8C2_41D2_2FB04763F4E0"]');
+            icons.forEach(function(icon) {
+                var btn = icon.closest('div.button') || icon.parentElement;
+                if(btn && !btn.hasAttribute('data-modal-hooked')) {
+                    btn.setAttribute('data-modal-hooked', 'true');
+                    btn.addEventListener('click', function(e) {
+                        var m = document.getElementById('roomModal');
+                        var c = document.getElementById('roomModalContainer');
+                        
+                        // DYNAMIC FULLSCREEN HANDLING FIX
+                        var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+                        var target = fsEl || document.body;
+                        if (target.tagName.toLowerCase() === 'canvas') {
+                            target = target.parentNode; // canvas cannot have HTML children rendered
+                        }
+                        
+                        if (c) {
+                            if (c.parentNode !== target) {
+                                target.appendChild(c);
+                            }
+                            c.style.position = "absolute";
+                            c.style.top = "0";
+                            c.style.left = "0";
+                            c.style.width = "100%";
+                            c.style.height = "100%";
+                            c.style.zIndex = "2147483647";
+                            c.style.pointerEvents = "none";
+                        }
+
+                        if(m) {
+                            m.style.zIndex = "2147483647";
+                            m.style.pointerEvents = "auto";
+                            m.style.display = 'flex';
+                            e.stopPropagation(); // prevent other events from interfering
+                        }
+                    });
+                }
+            });
+        }, 1000);
+
+        // Fullscreen handler: move modal into/out of viewer on fullscreen change
+        document.addEventListener('fullscreenchange', handleFSChange);
+        document.addEventListener('webkitfullscreenchange', handleFSChange);
+        document.addEventListener('mozfullscreenchange', handleFSChange);
+        document.addEventListener('msfullscreenchange', handleFSChange);
+
+        function handleFSChange() {
+            var container = document.getElementById('roomModalContainer');
+            if (!container) return;
+            var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+            if (fsEl) {
+                // Entering fullscreen: move container INTO the fullscreen element
+                fsEl.appendChild(container);
+            } else {
+                // Exiting fullscreen: move container back to body
+                document.body.appendChild(container);
+            }
+        }
+    });
+</script>
+</div>
 
 <style id="roomModalStyle">
     /* ============ CSS Modal Popup Ruangan ============ */
     .room-modal {
-        position: fixed;
+        position: absolute;
         top: 0;
         left: 0;
-        width: 100vw;
-        height: 100vh;
+        width: 100%;
+        height: 100%;
         background-color: rgba(0, 0, 0, 0.60);
         display: none; /* Auto-hide */
         justify-content: center;
         align-items: center;
-        z-index: 9999;
+        z-index: 2147483647;
         backdrop-filter: blur(5px);
     }
 
@@ -516,94 +646,7 @@ loadTour()
 </style>
 
 <!-- Modal Popup Ruangan -->
-<div id="roomModalContainer">
-<div id="roomModal" class="room-modal">
-    <div class="list_room">
-        <h2 class="list_room_title">Pilih Fasilitas Ruangan</h2>
 
-        <!-- 1. Lobby Utama -->
-        <a href="../../index.htm" class="room-card" id="labfkip">
-            <img src="../../media/panorama_18D0E997_1348_5CC0_41AC_A55305EE68DC_0/f/3/0_0.jpg"
-                 alt="Lobby Utama">
-            <h3>Lobby Utama</h3>
-        </a>
-
-        <!-- 2. Laboratorium Fisika -->
-        <a href="../../Labfis/index.htm" class="room-card" id="labfis">
-            <img src="../../Labfis/media/panorama_E1EF1479_ED73_9130_41D3_6188DE9EC37E_0/f/3/0_0.jpg"
-                 alt="Laboratorium Fisika">
-            <h3>Laboratorium Fisika</h3>
-        </a>
-
-        <!-- 3. Laboratorium Komputer -->
-        <a href="../../Lantai 2/labkom/index.htm" class="room-card" id="labkom">
-            <img src="../../Lantai 2/labkom/media/panorama_B8976067_B63F_4C4D_41D4_82276E08E98E_0/f/3/0_0.jpg"
-                 alt="Laboratorium Komputer">
-            <h3>Laboratorium Komputer</h3>
-        </a>
-
-        <!-- 4. Laboratorium Biologi -->
-        <a href="../../Lantai 2/labbio/index.htm" class="room-card" id="labbio">
-            <img src="../../Lantai 2/labbio/media/panorama_0E0E929A_05AE_FA02_4192_9B4DC98898E6_0/f/2/0_0.jpg"
-                 alt="Laboratorium Biologi">
-            <h3>Laboratorium Biologi</h3>
-        </a>
-
-        <!-- 5. Laboratorium Matematika -->
-        <a href="../../labmath/index.htm" class="room-card" id="labmath">
-            <img src="../../labmath/media/panorama_D9F62AAB_C15A_68D9_41D4_2AE0607B38BD_0/f/3/0_0.jpg"
-                 alt="Laboratorium Matematika">
-            <h3>Laboratorium Matematika</h3>
-        </a>
-
-        <!-- 6. Laboratorium Kimia -->
-        <a href="../../Lantai 2/labkim/index.htm" class="room-card" id="labkim">
-            <img src="../../Lantai 2/labkim/media/panorama_0A38E874_0189_C110_4176_1AE8579BAF0C_0/f/2/0_0.jpg"
-                 alt="Laboratorium Kimia">
-            <h3>Laboratorium Kimia</h3>
-        </a>
-
-        <!-- 7. Lantai 2 -->
-        <a href="../../Lantai 2/index.htm" class="room-card" id="lantai2">
-            <img src="../../Lantai 2/media/panorama_0AE493A5_13B8_4CC3_4193_CFEAD1ABDC91_0/f/3/0_0.jpg"
-                 alt="Lantai 2">
-            <h3>Lantai 2</h3>
-        </a>
-    </div>
-</div>
-
-<script>
-    // Script untuk menutup modal saat klik di luar container putih
-    document.addEventListener("DOMContentLoaded", function() {
-        var modal = document.getElementById("roomModal");
-        if(modal) {
-            modal.addEventListener("click", function(e) {
-                if (e.target === modal) {
-                    modal.style.display = "none";
-                }
-            });
-        }
-        
-        // Auto-hook into the Fasilitas Ruangan button icon
-        setInterval(function() {
-            var icons = document.querySelectorAll('div[style*="IconButton_81807A14_A3D3_C8C2_41D2_2FB04763F4E0"]');
-            icons.forEach(function(icon) {
-                var btn = icon.closest('div.button') || icon.parentElement;
-                if(btn && !btn.hasAttribute('data-modal-hooked')) {
-                    btn.setAttribute('data-modal-hooked', 'true');
-                    btn.addEventListener('click', function(e) {
-                        var m = document.getElementById('roomModal');
-                        if(m) {
-                            m.style.display = 'flex';
-                            e.stopPropagation(); // prevent other events from interfering
-                        }
-                    });
-                }
-            });
-        }, 1000);
-    });
-</script>
-</div>
 
 </body>
 </html>

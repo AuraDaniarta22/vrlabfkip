@@ -3726,7 +3726,7 @@
             "verticalAlign": "top",
             "paddingRight": 0,
             "scrollBarWidth": 10,
-            "height": 588.15,
+            "height": "80%",
             "minWidth": 1,
             "layout": "absolute",
             "borderSize": 0,
