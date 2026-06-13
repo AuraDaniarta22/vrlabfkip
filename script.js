@@ -1395,13 +1395,13 @@
         },
         {
             "levels": [
-                  {
-                      "url": "media/panduan_baru.png",
-                      "width": 1024,
-                      "class": "ImageResourceLevel",
-                      "height": 585
-                  }
-              ],
+                {
+                    "url": "media/panduan_baru.png",
+                    "width": 1024,
+                    "class": "ImageResourceLevel",
+                    "height": 585
+                }
+            ],
             "id": "ImageResource_B82CF0F6_B7CE_7B72_41C3_BE96B87E9996",
             "class": "ImageResource"
         },
@@ -1413,13 +1413,13 @@
         },
         {
             "levels": [
-                  {
-                      "url": "media/panduan_baru.png",
-                      "width": 1024,
-                      "class": "ImageResourceLevel",
-                      "height": 585
-                  }
-              ],
+                {
+                    "url": "media/panduan_baru.png",
+                    "width": 1024,
+                    "class": "ImageResourceLevel",
+                    "height": 585
+                }
+            ],
             "id": "ImageResource_B827C0F9_B7CE_7B7E_418C_394F12DFAC68",
             "class": "ImageResource"
         },
@@ -3726,7 +3726,7 @@
             "verticalAlign": "top",
             "paddingRight": 0,
             "scrollBarWidth": 10,
-            "height": "80%",
+            "height": 588.15,
             "minWidth": 1,
             "layout": "absolute",
             "borderSize": 0,
