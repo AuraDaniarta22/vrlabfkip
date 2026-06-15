@@ -138,8 +138,8 @@
    {
     "url": "media/popup_B1C90B24_93A6_3E21_41BA_25E3AC870408_0_1.png",
     "class": "ImageResourceLevel",
-    "width": 769,
-    "height": 1024
+    "width": 1447,
+    "height": 2048
    }
   ]
  },
@@ -1870,8 +1870,8 @@
    {
     "url": "media/popup_B7CAC660_93BA_1621_41DD_128B6D6E99F7_0_1.png",
     "class": "ImageResourceLevel",
-    "width": 769,
-    "height": 1024
+    "width": 1447,
+    "height": 2048
    }
   ]
  },
@@ -2524,20 +2524,20 @@
   {
    "url": "media/popup_B1C90B24_93A6_3E21_41BA_25E3AC870408_0_0.png",
    "class": "ImageResourceLevel",
-   "width": 920,
-   "height": 1225
+   "width": 2651,
+   "height": 3750
   },
   {
    "url": "media/popup_B1C90B24_93A6_3E21_41BA_25E3AC870408_0_1.png",
    "class": "ImageResourceLevel",
-   "width": 769,
-   "height": 1024
+   "width": 1447,
+   "height": 2048
   },
   {
    "url": "media/popup_B1C90B24_93A6_3E21_41BA_25E3AC870408_0_2.png",
    "class": "ImageResourceLevel",
-   "width": 384,
-   "height": 512
+   "width": 723,
+   "height": 1024
   }
  ]
 },
@@ -2920,20 +2920,20 @@
   {
    "url": "media/popup_B7CAC660_93BA_1621_41DD_128B6D6E99F7_0_0.png",
    "class": "ImageResourceLevel",
-   "width": 920,
-   "height": 1225
+   "width": 2651,
+   "height": 3750
   },
   {
    "url": "media/popup_B7CAC660_93BA_1621_41DD_128B6D6E99F7_0_1.png",
    "class": "ImageResourceLevel",
-   "width": 769,
-   "height": 1024
+   "width": 1447,
+   "height": 2048
   },
   {
    "url": "media/popup_B7CAC660_93BA_1621_41DD_128B6D6E99F7_0_2.png",
    "class": "ImageResourceLevel",
-   "width": 384,
-   "height": 512
+   "width": 723,
+   "height": 1024
   }
  ]
 },
