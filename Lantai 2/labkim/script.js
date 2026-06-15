@@ -110,7 +110,7 @@
  "downloadEnabled": false,
  "gap": 10,
  "layout": "absolute",
- "height":   350,
+ "height": "100%",
  "paddingTop": 0,
  "shadow": false,
  "paddingBottom": 0,
