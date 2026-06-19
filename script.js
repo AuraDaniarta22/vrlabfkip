@@ -8637,7 +8637,7 @@
             "paddingTop": 0,
             "paddingBottom": 0,
             "borderSize": 0,
-            "paddingLeft": 0,
+            "paddingLeft": 15,
             "scaleMode": "fit_inside",
             "data": {
                 "name": "gdl1"
@@ -8665,7 +8665,7 @@
             "paddingTop": 0,
             "paddingBottom": 0,
             "borderSize": 0,
-            "paddingLeft": 0,
+            "paddingLeft": 15,
             "scaleMode": "fit_inside",
             "data": {
                 "name": "gdl"
