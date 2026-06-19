@@ -1,5 +1,7 @@
 .vercel
 *.docx
+*.txt
+*.pdf
 BAB_*
 bab*
 Bagian_Awal*
