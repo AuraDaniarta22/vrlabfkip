@@ -605,38 +605,78 @@
 
     <script>
     // Fix for --SETTINGS container to be responsive dynamically
-    setInterval(function() {
-        var isLandscape = window.innerWidth > window.innerHeight && window.innerHeight <= 500;
-        
-        if (window.tdvplayer) {
+    (function() {
+        function adjustSettings() {
+            var isLandscape = window.innerWidth > window.innerHeight;
+            var isMobile = Math.min(window.innerWidth, window.innerHeight) <= 550;
+            
+            if (!window.tdvplayer) return;
+            
             var settingsContainer = window.tdvplayer.getById('Container_B156A269_BF46_B846_41CC_86CDE6B7F756');
-            if (settingsContainer) {
-                settingsContainer.set('right', isLandscape ? '3%' : '1%');
+            if (!settingsContainer) return;
+            
+            // Fullscreen detection
+            var isFullscreen = !!(document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement);
+            if (!isFullscreen) {
+                try { isFullscreen = window.tdvplayer.get('fullscreen') === true; } catch(e) {}
+            }
+            
+            // Right margin rules
+            if (isMobile) {
+                if (isLandscape && isFullscreen) {
+                    settingsContainer.set('right', '3%');
+                } else {
+                    settingsContainer.set('right', '2%');
+                }
+            }
+            
+            // button menu sup (Container_B1571269) = 110px tall, stays at top
+            // -button set (Container_B1573269) = positioned below it, scrollable
+            var buttonMenuSup = window.tdvplayer.getById('Container_B1571269_BF46_B846_41D9_B94D861499DF');
+            var buttonSetContainer = window.tdvplayer.getById('Container_B1573269_BF46_B846_41AD_E3E55F50C328');
+            
+            if (isMobile && isLandscape) {
+                var availH = window.innerHeight - 10;
+                if (availH < 588) {
+                    settingsContainer.set('height', availH);
+                }
+                
+                // Remove scroll from parent --SETTINGS so button menu sup stays fixed
+                settingsContainer.set('overflow', 'visible');
+                
+                // Position -button set right below button menu sup (110px)
+                if (buttonSetContainer) {
+                    buttonSetContainer.set('top', 110);
+                    // Set -button set to scroll, height = remaining space below menu button
+                    var remainH = availH - 115;
+                    if (remainH > 450) remainH = 450;
+                    buttonSetContainer.set('height', remainH);
+                    buttonSetContainer.set('overflow', 'scroll');
+                }
+            } else {
+                settingsContainer.set('height', 588.15);
+                settingsContainer.set('overflow', 'scroll');
+                
+                if (buttonSetContainer) {
+                    buttonSetContainer.set('top', '14.96%');
+                    buttonSetContainer.set('height', '59.417%');
+                    buttonSetContainer.set('overflow', 'visible');
+                }
             }
         }
         
-        var iconImg = document.querySelector('img[src*="IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081"]');
-        if (iconImg) {
-            var el = iconImg;
-            var settingsDiv = null;
-            while(el && el.tagName !== 'BODY') {
-                if (el.style && el.style.width && el.style.width.indexOf('113') !== -1) {
-                    settingsDiv = el;
-                    break;
-                }
-                el = el.parentElement;
-            }
-            if (settingsDiv) {
-                if (isLandscape) {
-                    // Constrain height so the internal scrollbar activates
-                    settingsDiv.style.setProperty('max-height', '95vh', 'important');
-                    settingsDiv.style.setProperty('-webkit-overflow-scrolling', 'touch', 'important');
-                } else {
-                    settingsDiv.style.setProperty('max-height', 'none', 'important');
-                }
-            }
-        }
-    }, 500);
+        setInterval(adjustSettings, 400);
+        window.addEventListener('resize', adjustSettings);
+        window.addEventListener('orientationchange', function() {
+            setTimeout(adjustSettings, 300);
+        });
+        document.addEventListener('fullscreenchange', function() {
+            setTimeout(adjustSettings, 300);
+        });
+        document.addEventListener('webkitfullscreenchange', function() {
+            setTimeout(adjustSettings, 300);
+        });
+    })();
     </script>
 </head>
 
