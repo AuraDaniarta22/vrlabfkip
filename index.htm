@@ -407,7 +407,7 @@
             padding-top: 30px;
             padding-bottom: 20px;
             margin: 0 0 20px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         }
 
         /* ============ Kartu Ruangan ============ */
@@ -420,10 +420,12 @@
             border-radius: 12px;
             overflow: hidden;
             border: none;
-            height: 220px; /* Fixed height for better compatibility */
+            height: 220px;
+            /* Fixed height for better compatibility */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            background-color: #000; /* Fallback background */
+            background-color: #000;
+            /* Fallback background */
         }
 
         .room-card:hover {
@@ -442,7 +444,7 @@
             z-index: 1;
             transition: transform 0.4s ease, filter 0.4s ease;
         }
-        
+
         #labbio img {
             object-position: right center;
         }
@@ -507,78 +509,135 @@
                 padding-top: 20px;
                 padding-bottom: 15px;
             }
-            
-                    .room-card h3 {
-            font-size: 1.2rem;
-            padding: 15px;
+
+            .room-card h3 {
+                font-size: 1.2rem;
+                padding: 15px;
+            }
         }
-    }
 
-    #Container_B156A269_BF46_B846_41CC_86CDE6B7F756 {
-        position: fixed !important;
-        z-index: 9999 !important;
-    }
-
-    /* Fix settings responsiveness in landscape mobile */
-    @media (max-height: 600px) and (orientation: landscape) {
         #Container_B156A269_BF46_B846_41CC_86CDE6B7F756 {
-            transform: scale(calc(100vh / 620)) !important;
-            transform-origin: right top !important;
-            right: 15px !important; /* Memberikan sedikit jarak aman dari tepi layar / notch HP */
+            position: fixed !important;
+            z-index: 9999 !important;
         }
-        .list_room {
-            top: 4% !important;
-            bottom: 4% !important;
-            left: 4% !important;
-            right: 4% !important;
-            padding: 0 15px 15px 15px !important;
-            grid-template-columns: repeat(4, 1fr) !important;
-            gap: 12px !important;
-        }
-        .list_room_title {
-            font-size: 1.2rem !important;
-            padding-top: 10px !important;
-            padding-bottom: 8px !important;
-            margin-bottom: 10px !important;
-        }
-        .room-card {
-            height: 110px !important;
-        }
-        .room-card h3 {
-            font-size: 0.95rem !important;
-            padding: 8px !important;
-        }
-    }
-    /* Responsive Margins for Title Container */
-    @media (max-width: 1024px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 5% !important;
-        }
-    }
-    @media (max-width: 768px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 5.5% !important;
-        }
-    }
-    @media (max-width: 425px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 0 !important;
-            margin: 15px 6% 60px !important;
-        }
-    }
-    @media (max-width: 375px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 0 !important;
-            margin: 15px 6.5% 60px !important;
-        }
-    }
-    @media (max-width: 320px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 0 !important;
-            margin: 15px 7% 60px !important;
-        }
-    }</style>
 
+        /* Fix settings responsiveness in landscape mobile */
+        @media (max-height: 600px) and (orientation: landscape) {
+            #Container_B156A269_BF46_B846_41CC_86CDE6B7F756 {
+                transform: scale(calc(100vh / 620)) !important;
+                transform-origin: right top !important;
+                right: 15px !important;
+                /* Memberikan sedikit jarak aman dari tepi layar / notch HP */
+            }
+
+            .list_room {
+                top: 4% !important;
+                bottom: 4% !important;
+                left: 4% !important;
+                right: 4% !important;
+                padding: 0 15px 15px 15px !important;
+                grid-template-columns: repeat(4, 1fr) !important;
+                gap: 12px !important;
+            }
+
+            .list_room_title {
+                font-size: 1.2rem !important;
+                padding-top: 10px !important;
+                padding-bottom: 8px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .room-card {
+                height: 110px !important;
+            }
+
+            .room-card h3 {
+                font-size: 0.95rem !important;
+                padding: 8px !important;
+            }
+        }
+
+        /* Responsive Margins for Title Container */
+        @media (max-width: 1024px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 5% !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 5.5% !important;
+            }
+        }
+
+        @media (max-width: 425px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 0 !important;
+                margin: 15px 6% 60px !important;
+            }
+        }
+
+        @media (max-width: 375px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 0 !important;
+                margin: 15px 6.5% 60px !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 0 !important;
+                margin: 15px 7% 60px !important;
+            }
+        }
+    </style>
+
+
+    <script>
+    // Fix for --SETTINGS container to be responsive dynamically
+    setInterval(function() {
+        var isLandscape = window.innerWidth > window.innerHeight && window.innerHeight <= 500;
+        
+        if (window.tdvplayer) {
+            var settingsContainer = window.tdvplayer.getById('Container_B156A269_BF46_B846_41CC_86CDE6B7F756');
+            if (settingsContainer) {
+                settingsContainer.set('right', isLandscape ? '3%' : '1%');
+            }
+        }
+        
+        var iconImg = document.querySelector('img[src*="IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081"]');
+        if (iconImg) {
+            var el = iconImg;
+            var settingsDiv = null;
+            while(el && el.tagName !== 'BODY') {
+                if (el.style && el.style.width && el.style.width.indexOf('113') !== -1) {
+                    settingsDiv = el;
+                    break;
+                }
+                el = el.parentElement;
+            }
+            if (settingsDiv) {
+                if (isLandscape) {
+                    // Constrain height so the internal scrollbar activates
+                    settingsDiv.style.setProperty('max-height', '95vh', 'important');
+                    settingsDiv.style.setProperty('-webkit-overflow-scrolling', 'touch', 'important');
+                } else {
+                    settingsDiv.style.setProperty('max-height', 'none', 'important');
+                }
+            }
+        }
+    }, 500);
+    </script>
 </head>
 
 <body onload="onLoad()">
@@ -589,361 +648,383 @@
                 webkit-playsinline poster="media/video_2B1BE67A_2531_BF07_41A6_E8D19C7D1C81_poster.jpg" preload="auto">
                 <source src="media/video_2B1BE67A_2531_BF07_41A6_E8D19C7D1C81.mp4" type="video/mp4">Your browser does
                 not support the video tab
-            </video></div>
+            </video>
+        </div>
     </div>
     <div id="viewer"></div>\n<div id="roomModalContainer">
-<div id="roomModal" class="room-modal">
-    <div class="list_room">
-        <h2 class="list_room_title">Pilih Fasilitas Ruangan</h2>
+        <div id="roomModal" class="room-modal">
+            <div class="list_room">
+                <h2 class="list_room_title">Pilih Fasilitas Ruangan</h2>
 
-        <!-- 1. Lobby Utama -->
-        <a href="index.htm" class="room-card" id="labfkip">
-            <img src="media/panorama_18D0E997_1348_5CC0_41AC_A55305EE68DC_0/f/3/0_0.jpg"
-                 alt="Lobby Utama">
-            <h3>Lobby Utama</h3>
-        </a>
+                <!-- 1. Lobby Utama -->
+                <a href="index.htm" class="room-card" id="labfkip">
+                    <img src="media/panorama_18D0E997_1348_5CC0_41AC_A55305EE68DC_0/f/3/0_0.jpg" alt="Lobby Utama">
+                    <h3>Lobby Utama</h3>
+                </a>
 
-        <!-- 2. Laboratorium Fisika -->
-        <a href="Labfis/index.htm" class="room-card" id="labfis">
-            <img src="Labfis/media/panorama_E1EF1479_ED73_9130_41D3_6188DE9EC37E_0/f/3/0_0.jpg"
-                 alt="Laboratorium Fisika">
-            <h3>Laboratorium Fisika</h3>
-        </a>
+                <!-- 2. Laboratorium Fisika -->
+                <a href="Labfis/index.htm" class="room-card" id="labfis">
+                    <img src="Labfis/media/panorama_E1EF1479_ED73_9130_41D3_6188DE9EC37E_0/f/3/0_0.jpg"
+                        alt="Laboratorium Fisika">
+                    <h3>Laboratorium Fisika</h3>
+                </a>
 
-        <!-- 3. Laboratorium Komputer -->
-        <a href="Lantai 2/labkom/index.htm" class="room-card" id="labkom">
-            <img src="Lantai 2/labkom/media/panorama_B8976067_B63F_4C4D_41D4_82276E08E98E_0/f/3/0_0.jpg"
-                 alt="Laboratorium Komputer">
-            <h3>Laboratorium Komputer</h3>
-        </a>
+                <!-- 3. Laboratorium Komputer -->
+                <a href="Lantai 2/labkom/index.htm" class="room-card" id="labkom">
+                    <img src="Lantai 2/labkom/media/panorama_B8976067_B63F_4C4D_41D4_82276E08E98E_0/f/3/0_0.jpg"
+                        alt="Laboratorium Komputer">
+                    <h3>Laboratorium Komputer</h3>
+                </a>
 
-        <!-- 4. Laboratorium Biologi -->
-        <a href="Lantai 2/labbio/index.htm" class="room-card" id="labbio">
-            <img src="Lantai 2/labbio/media/panorama_0E0E929A_05AE_FA02_4192_9B4DC98898E6_0/f/2/0_0.jpg"
-                 alt="Laboratorium Biologi">
-            <h3>Laboratorium Biologi</h3>
-        </a>
+                <!-- 4. Laboratorium Biologi -->
+                <a href="Lantai 2/labbio/index.htm" class="room-card" id="labbio">
+                    <img src="Lantai 2/labbio/media/panorama_0E0E929A_05AE_FA02_4192_9B4DC98898E6_0/f/2/0_0.jpg"
+                        alt="Laboratorium Biologi">
+                    <h3>Laboratorium Biologi</h3>
+                </a>
 
-        <!-- 5. Laboratorium Matematika -->
-        <a href="labmath/index.htm" class="room-card" id="labmath">
-            <img src="labmath/media/panorama_D9F62AAB_C15A_68D9_41D4_2AE0607B38BD_0/f/3/0_0.jpg"
-                 alt="Laboratorium Matematika">
-            <h3>Laboratorium Matematika</h3>
-        </a>
+                <!-- 5. Laboratorium Matematika -->
+                <a href="labmath/index.htm" class="room-card" id="labmath">
+                    <img src="labmath/media/panorama_D9F62AAB_C15A_68D9_41D4_2AE0607B38BD_0/f/3/0_0.jpg"
+                        alt="Laboratorium Matematika">
+                    <h3>Laboratorium Matematika</h3>
+                </a>
 
-        <!-- 6. Laboratorium Kimia -->
-        <a href="Lantai 2/labkim/index.htm" class="room-card" id="labkim">
-            <img src="Lantai 2/labkim/media/panorama_0A38E874_0189_C110_4176_1AE8579BAF0C_0/f/2/0_0.jpg"
-                 alt="Laboratorium Kimia">
-            <h3>Laboratorium Kimia</h3>
-        </a>
+                <!-- 6. Laboratorium Kimia -->
+                <a href="Lantai 2/labkim/index.htm" class="room-card" id="labkim">
+                    <img src="Lantai 2/labkim/media/panorama_0A38E874_0189_C110_4176_1AE8579BAF0C_0/f/2/0_0.jpg"
+                        alt="Laboratorium Kimia">
+                    <h3>Laboratorium Kimia</h3>
+                </a>
 
-        <!-- 7. Lantai 2 -->
-        <a href="Lantai 2/index.htm" class="room-card" id="lantai2">
-            <img src="Lantai 2/media/panorama_0AE493A5_13B8_4CC3_4193_CFEAD1ABDC91_0/f/3/0_0.jpg"
-                 alt="Lantai 2">
-            <h3>Lantai 2</h3>
-        </a>
-    </div>
-</div>
+                <!-- 7. Lantai 2 -->
+                <a href="Lantai 2/index.htm" class="room-card" id="lantai2">
+                    <img src="Lantai 2/media/panorama_0AE493A5_13B8_4CC3_4193_CFEAD1ABDC91_0/f/3/0_0.jpg"
+                        alt="Lantai 2">
+                    <h3>Lantai 2</h3>
+                </a>
+            </div>
+        </div>
 
-<script>
-    // Script untuk menutup modal saat klik di luar container putih
-    document.addEventListener("DOMContentLoaded", function() {
-        var modal = document.getElementById("roomModal");
-        if(modal) {
-            modal.addEventListener("click", function(e) {
-                if (e.target === modal) {
-                    modal.style.display = "none";
-                }
-            });
-        }
-        
-        // Auto-hook into the Fasilitas Ruangan button icon
-        setInterval(function() {
-            var icons = document.querySelectorAll('div[style*="IconButton_81807A14_A3D3_C8C2_41D2_2FB04763F4E0"]');
-            icons.forEach(function(icon) {
-                var btn = icon.closest('div.button') || icon.parentElement;
-                if(btn && !btn.hasAttribute('data-modal-hooked')) {
-                    btn.setAttribute('data-modal-hooked', 'true');
-                    btn.addEventListener('click', function(e) {
-                        var m = document.getElementById('roomModal');
-                        var c = document.getElementById('roomModalContainer');
-                        
-                        // DYNAMIC FULLSCREEN HANDLING FIX
-                        var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-                        var target = fsEl || document.body;
-                        if (target.tagName.toLowerCase() === 'canvas') {
-                            target = target.parentNode; // canvas cannot have HTML children rendered
-                        }
-                        
-                        if (c) {
-                            if (c.parentNode !== target) {
-                                target.appendChild(c);
-                            }
-                            c.style.position = "absolute";
-                            c.style.top = "0";
-                            c.style.left = "0";
-                            c.style.width = "100%";
-                            c.style.height = "100%";
-                            c.style.zIndex = "2147483647";
-                            c.style.pointerEvents = "none";
-                        }
-
-                        if(m) {
-                            m.style.zIndex = "2147483647";
-                            m.style.pointerEvents = "auto";
-                            m.style.display = 'flex';
-                            e.stopPropagation(); // prevent other events from interfering
+        <script>
+            // Script untuk menutup modal saat klik di luar container putih
+            document.addEventListener("DOMContentLoaded", function () {
+                var modal = document.getElementById("roomModal");
+                if (modal) {
+                    modal.addEventListener("click", function (e) {
+                        if (e.target === modal) {
+                            modal.style.display = "none";
                         }
                     });
                 }
+
+                // Auto-hook into the Fasilitas Ruangan button icon
+                setInterval(function () {
+                    var icons = document.querySelectorAll('div[style*="IconButton_81807A14_A3D3_C8C2_41D2_2FB04763F4E0"]');
+                    icons.forEach(function (icon) {
+                        var btn = icon.closest('div.button') || icon.parentElement;
+                        if (btn && !btn.hasAttribute('data-modal-hooked')) {
+                            btn.setAttribute('data-modal-hooked', 'true');
+                            btn.addEventListener('click', function (e) {
+                                var m = document.getElementById('roomModal');
+                                var c = document.getElementById('roomModalContainer');
+
+                                // DYNAMIC FULLSCREEN HANDLING FIX
+                                var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+                                var target = fsEl || document.body;
+                                if (target.tagName.toLowerCase() === 'canvas') {
+                                    target = target.parentNode; // canvas cannot have HTML children rendered
+                                }
+
+                                if (c) {
+                                    if (c.parentNode !== target) {
+                                        target.appendChild(c);
+                                    }
+                                    c.style.position = "absolute";
+                                    c.style.top = "0";
+                                    c.style.left = "0";
+                                    c.style.width = "100%";
+                                    c.style.height = "100%";
+                                    c.style.zIndex = "2147483647";
+                                    c.style.pointerEvents = "none";
+                                }
+
+                                if (m) {
+                                    m.style.zIndex = "2147483647";
+                                    m.style.pointerEvents = "auto";
+                                    m.style.display = 'flex';
+                                    e.stopPropagation(); // prevent other events from interfering
+                                }
+                            });
+                        }
+                    });
+                }, 1000);
+
+                // Fullscreen handler: move modal into/out of viewer on fullscreen change
+                document.addEventListener('fullscreenchange', handleFSChange);
+                document.addEventListener('webkitfullscreenchange', handleFSChange);
+                document.addEventListener('mozfullscreenchange', handleFSChange);
+                document.addEventListener('msfullscreenchange', handleFSChange);
+
+                function handleFSChange() {
+                    var container = document.getElementById('roomModalContainer');
+                    if (!container) return;
+                    var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+                    if (fsEl) {
+                        // Entering fullscreen: move container INTO the fullscreen element
+                        fsEl.appendChild(container);
+                    } else {
+                        // Exiting fullscreen: move container back to body
+                        document.body.appendChild(container);
+                    }
+                }
             });
-        }, 1000);
+        </script>
+    </div>
 
-        // Fullscreen handler: move modal into/out of viewer on fullscreen change
-        document.addEventListener('fullscreenchange', handleFSChange);
-        document.addEventListener('webkitfullscreenchange', handleFSChange);
-        document.addEventListener('mozfullscreenchange', handleFSChange);
-        document.addEventListener('msfullscreenchange', handleFSChange);
+    <style id="roomModalStyle">
+        /* ============ CSS Modal Popup Ruangan ============ */
+        .room-modal {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.60);
+            display: none;
+            /* Auto-hide */
+            justify-content: center;
+            align-items: center;
+            z-index: 2147483647;
+            backdrop-filter: blur(5px);
+        }
 
-        function handleFSChange() {
-            var container = document.getElementById('roomModalContainer');
-            if (!container) return;
-            var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-            if (fsEl) {
-                // Entering fullscreen: move container INTO the fullscreen element
-                fsEl.appendChild(container);
-            } else {
-                // Exiting fullscreen: move container back to body
-                document.body.appendChild(container);
+        .list_room {
+            position: absolute;
+            top: 10%;
+            bottom: 10%;
+            left: 15%;
+            right: 15%;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            overflow-y: auto;
+            padding: 0 30px 30px 30px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            align-content: start;
+            scrollbar-width: thin;
+        }
+
+        .list_room::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .list_room::-webkit-scrollbar-thumb {
+            background-color: #bdc3c7;
+            border-radius: 10px;
+        }
+
+        .list_room_title {
+            grid-column: 1 / -1;
+            text-align: center;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            color: #2c3e50;
+            font-size: 1.8rem;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 10;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            margin: 0 0 20px 0;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        /* ============ Kartu Ruangan ============ */
+        .room-card {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            height: 220px;
+            border-radius: 12px;
+            overflow: hidden;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            background-color: #000;
+        }
+
+        .room-card img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center center;
+            z-index: 1;
+            transition: transform 0.4s ease, filter 0.4s ease;
+        }
+
+        #labbio img {
+            object-position: right center;
+        }
+
+        .room-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 45%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
+            z-index: 2;
+        }
+
+        .room-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .room-card:hover img {
+            transform: scale(1.05);
+            filter: brightness(1.1);
+        }
+
+        .room-card h3 {
+            position: relative;
+            z-index: 3;
+            margin: 0;
+            padding: 20px;
+            color: white;
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            font-size: 1.3rem;
+            text-align: center;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+        }
+
+        /* ============ Responsif: Mobile ============ */
+        @media (max-width: 768px) {
+            .list_room {
+                top: 5%;
+                bottom: 5%;
+                left: 5%;
+                right: 5%;
+                padding: 0 20px 20px 20px;
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .room-card {
+                height: 200px;
+            }
+
+            .list_room_title {
+                font-size: 1.5rem;
+                padding-top: 20px;
+                padding-bottom: 15px;
+            }
+
+            .room-card h3 {
+                font-size: 1.2rem;
+                padding: 15px;
             }
         }
-    });
-</script>
-</div>
 
-<style id="roomModalStyle">
-    /* ============ CSS Modal Popup Ruangan ============ */
-    .room-modal {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.60);
-        display: none; /* Auto-hide */
-        justify-content: center;
-        align-items: center;
-        z-index: 2147483647;
-        backdrop-filter: blur(5px);
-    }
-
-    .list_room {
-        position: absolute;
-        top: 10%;
-        bottom: 10%;
-        left: 15%;
-        right: 15%;
-        background-color: #ffffff;
-        border-radius: 12px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
-        overflow-y: auto;
-        padding: 0 30px 30px 30px;
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 24px;
-        align-content: start;
-        scrollbar-width: thin;
-    }
-
-    .list_room::-webkit-scrollbar {
-        width: 8px;
-    }
-
-    .list_room::-webkit-scrollbar-thumb {
-        background-color: #bdc3c7;
-        border-radius: 10px;
-    }
-
-    .list_room_title {
-        grid-column: 1 / -1;
-        text-align: center;
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        color: #2c3e50;
-        font-size: 1.8rem;
-        font-weight: bold;
-        position: sticky;
-        top: 0;
-        background-color: rgba(255, 255, 255, 0.95);
-        backdrop-filter: blur(10px);
-        z-index: 10;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        margin: 0 0 20px 0;
-        border-bottom: 1px solid rgba(0,0,0,0.05);
-    }
-
-    /* ============ Kartu Ruangan ============ */
-    .room-card {
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        height: 220px;
-        border-radius: 12px;
-        overflow: hidden;
-        text-decoration: none;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-        background-color: #000;
-    }
-
-    .room-card img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: center center;
-        z-index: 1;
-        transition: transform 0.4s ease, filter 0.4s ease;
-    }
-    
-    #labbio img {
-        object-position: right center;
-    }
-
-    .room-card::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 45%;
-        background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 0%, transparent 100%);
-        z-index: 2;
-    }
-
-    .room-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .room-card:hover img {
-        transform: scale(1.05);
-        filter: brightness(1.1);
-    }
-
-    .room-card h3 {
-        position: relative;
-        z-index: 3;
-        margin: 0;
-        padding: 20px;
-        color: white;
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        font-size: 1.3rem;
-        text-align: center;
-        font-weight: 800;
-        text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-        pointer-events: none;
-    }
-
-    /* ============ Responsif: Mobile ============ */
-    @media (max-width: 768px) {
-        .list_room {
-            top: 5%;
-            bottom: 5%;
-            left: 5%;
-            right: 5%;
-            padding: 0 20px 20px 20px;
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-
-        .room-card {
-            height: 200px;
-        }
-
-        .list_room_title {
-            font-size: 1.5rem;
-            padding-top: 20px;
-            padding-bottom: 15px;
-        }
-        
-                .room-card h3 {
-            font-size: 1.2rem;
-            padding: 15px;
-        }
-    }
-
-    #Container_B156A269_BF46_B846_41CC_86CDE6B7F756 {
-        position: fixed !important;
-        z-index: 9999 !important;
-    }
-
-    /* Fix settings responsiveness in landscape mobile */
-    @media (max-height: 600px) and (orientation: landscape) {
         #Container_B156A269_BF46_B846_41CC_86CDE6B7F756 {
-            transform: scale(calc(100vh / 620)) !important;
-            transform-origin: right top !important;
-            right: 15px !important; /* Memberikan sedikit jarak aman dari tepi layar / notch HP */
+            position: fixed !important;
+            z-index: 9999 !important;
         }
-        .list_room {
-            top: 4% !important;
-            bottom: 4% !important;
-            left: 4% !important;
-            right: 4% !important;
-            padding: 0 15px 15px 15px !important;
-            grid-template-columns: repeat(4, 1fr) !important;
-            gap: 12px !important;
-        }
-        .list_room_title {
-            font-size: 1.2rem !important;
-            padding-top: 10px !important;
-            padding-bottom: 8px !important;
-            margin-bottom: 10px !important;
-        }
-        .room-card {
-            height: 110px !important;
-        }
-        .room-card h3 {
-            font-size: 0.95rem !important;
-            padding: 8px !important;
-        }
-    }
-    /* Responsive Margins for Title Container */
-    @media (max-width: 1024px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 5% !important;
-        }
-    }
-    @media (max-width: 768px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 5.5% !important;
-        }
-    }
-    @media (max-width: 425px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 0 !important;
-            margin: 15px 6% 60px !important;
-        }
-    }
-    @media (max-width: 375px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 0 !important;
-            margin: 15px 6.5% 60px !important;
-        }
-    }
-    @media (max-width: 320px) {
-        #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C, #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
-            left: 0 !important;
-            margin: 15px 7% 60px !important;
-        }
-    }</style>
 
-<!-- Modal Popup Ruangan -->
+        /* Fix settings responsiveness in landscape mobile */
+        @media (max-height: 600px) and (orientation: landscape) {
+            #Container_B156A269_BF46_B846_41CC_86CDE6B7F756 {
+                transform: scale(calc(100vh / 620)) !important;
+                transform-origin: right top !important;
+                right: 15px !important;
+                /* Memberikan sedikit jarak aman dari tepi layar / notch HP */
+            }
+
+            .list_room {
+                top: 4% !important;
+                bottom: 4% !important;
+                left: 4% !important;
+                right: 4% !important;
+                padding: 0 15px 15px 15px !important;
+                grid-template-columns: repeat(4, 1fr) !important;
+                gap: 12px !important;
+            }
+
+            .list_room_title {
+                font-size: 1.2rem !important;
+                padding-top: 10px !important;
+                padding-bottom: 8px !important;
+                margin-bottom: 10px !important;
+            }
+
+            .room-card {
+                height: 110px !important;
+            }
+
+            .room-card h3 {
+                font-size: 0.95rem !important;
+                padding: 8px !important;
+            }
+        }
+
+        /* Responsive Margins for Title Container */
+        @media (max-width: 1024px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 5% !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 5.5% !important;
+            }
+        }
+
+        @media (max-width: 425px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 0 !important;
+                margin: 15px 6% 60px !important;
+            }
+        }
+
+        @media (max-width: 375px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 0 !important;
+                margin: 15px 6.5% 60px !important;
+            }
+        }
+
+        @media (max-width: 320px) {
+
+            #Container_3DF0FE9C_1B6B_FDA4_41A2_73E9F65BFA2C,
+            #Container_B1A4ED6C_A5A4_7E35_41E3_56759BA589E1 {
+                left: 0 !important;
+                margin: 15px 7% 60px !important;
+            }
+        }
+    </style>
+
+    <!-- Modal Popup Ruangan -->
 
 
 </body>

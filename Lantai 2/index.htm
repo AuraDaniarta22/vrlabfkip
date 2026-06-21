@@ -382,6 +382,42 @@ loadTour()
         }
     }</style>
     
+
+    <script>
+    // Fix for --SETTINGS container to be responsive dynamically
+    setInterval(function() {
+        var isLandscape = window.innerWidth > window.innerHeight && window.innerHeight <= 500;
+        
+        if (window.tdvplayer) {
+            var settingsContainer = window.tdvplayer.getById('Container_B156A269_BF46_B846_41CC_86CDE6B7F756');
+            if (settingsContainer) {
+                settingsContainer.set('right', isLandscape ? '3%' : '1%');
+            }
+        }
+        
+        var iconImg = document.querySelector('img[src*="IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081"]');
+        if (iconImg) {
+            var el = iconImg;
+            var settingsDiv = null;
+            while(el && el.tagName !== 'BODY') {
+                if (el.style && el.style.width && el.style.width.indexOf('113') !== -1) {
+                    settingsDiv = el;
+                    break;
+                }
+                el = el.parentElement;
+            }
+            if (settingsDiv) {
+                if (isLandscape) {
+                    // Constrain height so the internal scrollbar activates
+                    settingsDiv.style.setProperty('max-height', '95vh', 'important');
+                    settingsDiv.style.setProperty('-webkit-overflow-scrolling', 'touch', 'important');
+                } else {
+                    settingsDiv.style.setProperty('max-height', 'none', 'important');
+                }
+            }
+        }
+    }, 500);
+    </script>
 </head>
 <body onload="onLoad()">
     <div id="preloadContainer" style="background-color:rgba(255,255,255,1)"><div style="z-index: 4; position: absolute; display: flex; align-items: center; text-align: center; overflow: hidden; left: 17.7%; top: 19.09%; width: 58.59%; height: 57.36%"><video id="video_228A4601_3F36_E563_41B1_730E2DA2CD31" width="100%" height="100%" loop autoplay playsinline webkit-playsinline poster="media/video_228A4601_3F36_E563_41B1_730E2DA2CD31_poster.jpg" preload="auto"><source src="media/video_228A4601_3F36_E563_41B1_730E2DA2CD31.mp4" type="video/mp4">Your browser does not support the video tab</video></div></div>
