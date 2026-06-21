@@ -612,6 +612,29 @@
             
             if (!window.tdvplayer) return;
             
+            // --- VR Mode Comfort Adjustment ---
+            // Narrows the viewport on ultra-wide phones so the VR split-screen isn't too wide for VR boxes
+            var viewer = document.getElementById('viewer');
+            if (viewer) {
+                var isVrMode = false;
+                try { isVrMode = window.tdvplayer.get('vrMode') === true; } catch(e) {}
+                
+                if (isVrMode && isLandscape && isMobile) {
+                    var idealWidth = window.innerHeight * 1.8; // 16:9 to 18:9 ratio is usually most comfortable for lenses
+                    if (window.innerWidth > idealWidth) {
+                        var leftOffset = (window.innerWidth - idealWidth) / 2;
+                        viewer.style.setProperty('width', idealWidth + 'px', 'important');
+                        viewer.style.setProperty('left', leftOffset + 'px', 'important');
+                    } else {
+                        viewer.style.setProperty('width', '100%', 'important');
+                        viewer.style.setProperty('left', '0px', 'important');
+                    }
+                } else {
+                    viewer.style.setProperty('width', '100%', 'important');
+                    viewer.style.setProperty('left', '0px', 'important');
+                }
+            }
+
             var settingsContainer = window.tdvplayer.getById('Container_B156A269_BF46_B846_41CC_86CDE6B7F756');
             if (!settingsContainer) return;
             
@@ -635,7 +658,7 @@
             var buttonMenuSup = window.tdvplayer.getById('Container_B1571269_BF46_B846_41D9_B94D861499DF');
             var buttonSetContainer = window.tdvplayer.getById('Container_B1573269_BF46_B846_41AD_E3E55F50C328');
             
-            if (isMobile && isLandscape) {
+            if (isMobile && isLandscape && !isVrMode) {
                 var availH = window.innerHeight - 10;
                 if (availH < 588) {
                     settingsContainer.set('height', availH);
