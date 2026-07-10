@@ -9844,7 +9844,7 @@
       "toolTipFontFamily": "Arial",
       "propagateClick": true,
       "id": "IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081",
-            "rollOverIconURL": "skin/IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081_rollover.png",
+      "rollOverIconURL": "skin/IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081_rollover.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
@@ -11800,6 +11800,7 @@
       "areas": [
         {
           "mapColor": "#FF0000",
+          "click": "this.mainPlayList.set('selectedIndex', 0)",
           "class": "HotspotPanoramaOverlayArea"
         }
       ],
@@ -13230,7 +13231,7 @@
         {
           "class": "HotspotPanoramaOverlayArea",
           "mapColor": "#FF0000",
-          "click": "this.mainPlayList.set('selectedIndex', 6)"
+          "click": "this.startPanoramaWithCamera(this.panorama_0E181F5E_05AE_0A05_416D_04530F9BD830, this.camera_EB8C2758_AACC_ECBA_41E4_BEA6B01D9F6B); this.mainPlayList.set('selectedIndex', 5)"
         }
       ],
       "data": {
@@ -13848,14 +13849,7 @@
           "pitch": 0,
           "yaw": 0
         }
-      ],
-      "useHandCursor": true,
-      "areas": [
-        {
-          "class": "HotspotPanoramaOverlayArea",
-          "mapColor": "#FF0000",
-          "toolTip": "Glass Cabinet"
-        }
+
       ],
       "id": "overlay_99C569FC_A4ED_F6F3_41D1_857D01F1E4FD",
       "data": {
@@ -14369,7 +14363,7 @@
       "toolTipFontFamily": "Arial",
       "propagateClick": true,
       "id": "IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781",
-            "rollOverIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_rollover.png",
+      "rollOverIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_rollover.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
@@ -14426,7 +14420,7 @@
       "toolTipShadowVerticalLength": 0,
       "propagateClick": true,
       "id": "IconButton_B156C269_BF46_B846_41B6_1BAAE2858250",
-            "rollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_rollover_v2.png",
+      "rollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_rollover_v2.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
@@ -17935,7 +17929,8 @@
       "areas": [
         {
           "mapColor": "#FF0000",
-          "class": "HotspotPanoramaOverlayArea"
+          "class": "HotspotPanoramaOverlayArea",
+          "click": "this.startPanoramaWithCamera(this.panorama_0E3A61E8_05AE_760E_4150_28C072AD2F2C, this.camera_EBA7D782_AACC_EB89_41BC_CFE03E35FC14); this.mainPlayList.set('selectedIndex', 10)"
         }
       ],
       "id": "overlay_E0BA6D7C_AACB_9F79_41DA_44F90939181E",
