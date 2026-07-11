@@ -9854,7 +9854,7 @@
       "toolTipFontFamily": "Arial",
       "propagateClick": true,
       "id": "IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081",
-            "rollOverIconURL": "skin/IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081_rollover.png",
+      "rollOverIconURL": "skin/IconButton_B1569269_BF46_B846_41C8_6F2DFDD9F081_rollover.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
@@ -11107,6 +11107,7 @@
       "areas": [
         {
           "mapColor": "#FF0000",
+          "click": "this.startPanoramaWithCamera(this.panorama_1C1B63E6_0188_C730_416A_E102A28938A8, this.camera_9D24D13C_8C2A_2F57_41D9_6711DB92177A); this.mainPlayList.set('selectedIndex', 13)",
           "class": "HotspotPanoramaOverlayArea"
         }
       ],
@@ -11253,13 +11254,7 @@
         }
       ],
       "useHandCursor": true,
-      "areas": [
-        {
-          "class": "HotspotPanoramaOverlayArea",
-          "mapColor": "#FF0000",
-          "toolTip": "Lemari Penyimpanan"
-        }
-      ],
+
       "id": "overlay_E61A5D0E_A5DB_9C99_41E4_D6AE9B47D766",
       "data": {
         "label": "Polygon"
@@ -12217,13 +12212,13 @@
       "toolTipFontFamily": "Arial",
       "propagateClick": true,
       "id": "IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781",
-            "rollOverIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_rollover.png",
+      "rollOverIconURL": "skin/IconButton_B156E269_BF46_B846_41E0_1BA0FC1CC781_rollover.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
       "paddingLeft": 0,
       "borderSize": 0,
-      "width":  45.5,
+      "width": 45.5,
       "minHeight": 1,
       "toolTip": "Nonaktifkan Hotspot",
       "horizontalAlign": "center",
@@ -12241,7 +12236,7 @@
       "toolTipFontWeight": "normal",
       "mode": "toggle",
       "toolTipTextShadowBlurRadius": 3,
-      "height":  45.5,
+      "height": 45.5,
       "toolTipBorderSize": 1,
       "toolTipShadowColor": "#333333",
       "paddingTop": 0,
@@ -12261,7 +12256,7 @@
       "toolTipFontStyle": "normal",
       "cursor": "hand",
       "toolTipShadowVerticalLength": 0,
-      "maxWidth":  45.5,
+      "maxWidth": 45.5,
       "data": {
         "name": "IconButton HS "
       },
@@ -12269,12 +12264,12 @@
     },
     {
       "transparencyActive": true,
-      "maxHeight":  45.5,
+      "maxHeight": 45.5,
       "toolTipFontFamily": "Arial",
       "toolTipShadowVerticalLength": 0,
       "propagateClick": true,
       "id": "IconButton_B156C269_BF46_B846_41B6_1BAAE2858250",
-            "rollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_rollover_v2.png",
+      "rollOverIconURL": "skin/IconButton_B156C269_BF46_B846_41B6_1BAAE2858250_rollover_v2.png",
       "toolTipShadowSpread": 0,
       "paddingRight": 0,
       "toolTipBorderColor": "#767676",
