@@ -131,8 +131,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -244,8 +243,7 @@
             "rotationZ": 0,
             "hideEasing": "cubic_out",
             "loop": false,
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "pitch": 3.31,
             "yaw": 166.97,
             "hideDuration": 500,
@@ -268,8 +266,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -365,8 +362,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -482,8 +478,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -511,8 +506,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -540,8 +534,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -635,8 +628,7 @@
             "rotationZ": 0,
             "hideEasing": "cubic_out",
             "loop": false,
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "pitch": 5.38,
             "yaw": -180,
             "hideDuration": 500,
@@ -1803,8 +1795,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -1832,8 +1823,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -1873,8 +1863,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -1944,8 +1933,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -1994,8 +1982,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -2047,8 +2034,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -2112,8 +2098,7 @@
             "rotationZ": 0,
             "hideEasing": "cubic_out",
             "loop": false,
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "pitch": 20.55,
             "yaw": 12.65,
             "hideDuration": 500,
@@ -2503,8 +2488,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -2964,8 +2948,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -3023,8 +3006,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4281,8 +4263,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4310,8 +4291,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4339,8 +4319,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4368,8 +4347,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4397,8 +4375,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4746,8 +4723,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -4775,8 +4751,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -5626,8 +5601,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -5655,8 +5629,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -6432,8 +6405,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -6461,8 +6433,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
@@ -6490,8 +6461,7 @@
             "rotationX": 0,
             "rotationZ": 0,
             "hideEasing": "cubic_out",
-            "popupMaxWidth": "100%",
-            "popupMaxHeight": "100%",
+            "popupMaxHeight": "95%",
             "image": {
                 "class": "ImageResource",
                 "levels": [
