@@ -565,13 +565,13 @@
       "id": "ImageResource_E60784C1_A5CB_AD8A_41D1_3B05E7887F47",
       "levels": [
         {
-          "url": "media/popup_E60794C1_A5CB_AD8A_41B1_0061B7A38CB6_0_0.png",
+          "url": "media/popup_E0D10C23_A5F4_9C8F_41D2_2419D169479E_0_1.png",
           "class": "ImageResourceLevel",
           "width": 2121,
           "height": 3000
         },
         {
-          "url": "media/popup_E60794C1_A5CB_AD8A_41B1_0061B7A38CB6_0_1.png",
+          "url": "media/popup_E0D10C23_A5F4_9C8F_41D2_2419D169479E_0_1.png",
           "class": "ImageResourceLevel",
           "width": 1447,
           "height": 2048
@@ -583,7 +583,7 @@
           "height": 1024
         },
         {
-          "url": "media/popup_E60794C1_A5CB_AD8A_41B1_0061B7A38CB6_0_3.png",
+          "url": "media/popup_E0D10C23_A5F4_9C8F_41D2_2419D169479E_0_1.png",
           "class": "ImageResourceLevel",
           "width": 361,
           "height": 512
