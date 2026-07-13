@@ -4369,7 +4369,7 @@
                     "class": "HotspotPanoramaOverlayArea",
                     "mapColor": "#FF0000",
                     "toolTip": "Laboratorium Pembelajaran Biologi",
-                    "click": "this.openLink('Labbio/index.htm', '_self')"
+                    "click": "this.openLink('labbio/index.htm', '_self')"
                 }
             ],
             "id": "overlay_0A02E72B_13B8_75C7_41B1_34F9D4A04557",

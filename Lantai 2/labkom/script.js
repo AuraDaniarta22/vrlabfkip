@@ -898,7 +898,7 @@
         },
         {
             "fieldOfViewOverlayOutsideOpacity": 0,
-            "label": "Labkom",
+            "label": "labkom",
             "id": "map_9EFAFA30_BEF1_0E4E_41D6_039B090E127D",
             "minimumZoomFactor": 0.5,
             "thumbnailUrl": "media/map_9EFAFA30_BEF1_0E4E_41D6_039B090E127D_t.png",

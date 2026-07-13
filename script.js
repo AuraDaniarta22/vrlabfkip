@@ -4107,7 +4107,7 @@
                     "mapColor": "#FF0000",
                     "class": "HotspotPanoramaOverlayArea",
                     "toolTip": "Laboratorium Pembelajaran Matematika",
-                    "click": "this.openLink('../Labmath/index.htm', '_self')"
+                    "click": "this.openLink('../labmath/index.htm', '_self')"
                 }
             ],
             "rollOverDisplay": false,
@@ -4154,7 +4154,7 @@
                     "mapColor": "#FF0000",
                     "class": "HotspotPanoramaOverlayArea",
                     "toolTip": "Laboratorium Pembelajaran Matematika",
-                    "click": "this.openLink('../Labmath/index.htm', '_self')"
+                    "click": "this.openLink('../labmath/index.htm', '_self')"
                 }
             ],
             "rollOverDisplay": false,
@@ -6604,7 +6604,7 @@
                     "mapColor": "#FF0000",
                     "class": "HotspotPanoramaOverlayArea",
                     "toolTip": "Laboratorium Pembelajaran Matematika",
-                    "click": "this.openLink('../Labmath/index.htm', '_self')"
+                    "click": "this.openLink('../labmath/index.htm', '_self')"
                 }
             ],
             "rollOverDisplay": false,
