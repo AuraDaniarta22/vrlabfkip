@@ -577,7 +577,7 @@
           "height": 2048
         },
         {
-          "url": "media/popup_E60794C1_A5CB_AD8A_41B1_0061B7A38CB6_0_2.png",
+          "url": "media/popup_E0D10C23_A5F4_9C8F_41D2_2419D169479E_0_1.png",
           "class": "ImageResourceLevel",
           "width": 723,
           "height": 1024
@@ -5000,7 +5000,7 @@
         "class": "ImageResource",
         "levels": [
           {
-            "url": "media/popup_E60794C1_A5CB_AD8A_41B1_0061B7A38CB6_0_2.png",
+            "url": "media/popup_E0D10C23_A5F4_9C8F_41D2_2419D169479E_0_1.png",
             "class": "ImageResourceLevel",
             "width": 723,
             "height": 1024
